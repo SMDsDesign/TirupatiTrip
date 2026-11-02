@@ -1,0 +1,836 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Tirupati &amp; Tirumala Trip</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Manrope:wght@400;500;600;700&family=Caveat:wght@500&display=swap">
+<style>
+/* Layout: floating pill rail + organic blob panels on a soft neumorphic ground; painted SVG scenes stand in for photography. */
+:root{
+  /* Primaries */ --indigo:#1F2A5C; --mari:#E8A33D;
+  /* Accents */ --teal:#2F7F7A; --kum:#C2413A; --lotus:#D98C86; --lilac:#8C86B8; --sand:#F3E6CF; --mist:#E4E7EF;
+  --bg:#EEEDEA; --surf:#F8F7F4; --surf2:#E6E4DE; --ink:#1C2140; --mut:#6A6E85; --line:#DDDAD2;
+  --btn:#1F2A5C; --btn-ink:#FFFFFF; --chip:#F3E6CF; --chip-ink:#5A4321; --head:#1F2A5C;
+  --shd:rgba(31,42,92,.13); --shl:rgba(255,255,255,.95);
+  --f-display:'Cormorant Garamond',Georgia,'Times New Roman',serif;
+  --f-body:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --f-hand:'Caveat','Segoe Print',cursive;
+  --r-xl:34px; --r-l:24px; --r-m:16px;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --indigo:#AEB8F0; --mari:#F0B65A; --teal:#6CC1B8; --kum:#EF8A80; --lotus:#E7A9A3; --lilac:#B9B3E6; --sand:#3A3224; --mist:#262A3B;
+  --bg:#12141D; --surf:#1B1E2B; --surf2:#242839; --ink:#ECEAF4; --mut:#A2A5BC; --line:#2E3247;
+  --btn:#F0B65A; --btn-ink:#1B1E2B; --chip:#3A3224; --chip-ink:#F3D9A8; --head:#E8E4F6;
+  --shd:rgba(0,0,0,.5); --shl:rgba(255,255,255,.035); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --indigo:#AEB8F0; --mari:#F0B65A; --teal:#6CC1B8; --kum:#EF8A80; --lotus:#E7A9A3; --lilac:#B9B3E6; --sand:#3A3224; --mist:#262A3B;
+  --bg:#12141D; --surf:#1B1E2B; --surf2:#242839; --ink:#ECEAF4; --mut:#A2A5BC; --line:#2E3247;
+  --btn:#F0B65A; --btn-ink:#1B1E2B; --chip:#3A3224; --chip-ink:#F3D9A8; --head:#E8E4F6;
+  --shd:rgba(0,0,0,.5); --shl:rgba(255,255,255,.035); color-scheme:dark}
+
+*{box-sizing:border-box}
+html,body{min-height:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 15px/1.55 var(--f-body);-webkit-font-smoothing:antialiased;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 120px}
+h1,h2,h3,h4,.serif{font-family:var(--f-display);font-weight:400;font-synthesis:none;margin:0;text-wrap:balance;color:var(--head);letter-spacing:.005em}
+p{margin:0}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--mari);outline-offset:3px;border-radius:10px}
+.tab{font-variant-numeric:tabular-nums}
+
+.soft{background:var(--surf);border-radius:var(--r-l);box-shadow:10px 12px 28px var(--shd),-8px -8px 22px var(--shl)}
+.inset{background:var(--surf2);border-radius:var(--r-m);box-shadow:inset 3px 3px 8px var(--shd),inset -3px -3px 8px var(--shl)}
+
+/* ---------- Shell ---------- */
+.app{display:grid;grid-template-columns:96px minmax(0,1fr);gap:28px;max-width:1360px;margin:0 auto}
+.rail{position:sticky;top:20px;align-self:start;display:flex;flex-direction:column;align-items:center;gap:10px;padding:18px 10px;border-radius:48px}
+.mark{display:grid;place-items:center;gap:2px;margin-bottom:12px;color:var(--indigo);text-align:center}
+.mark svg{width:36px;height:30px}
+.mark span{font:500 13px/1 var(--f-display);letter-spacing:.04em}
+.nav{all:unset;box-sizing:border-box;cursor:pointer;width:70px;padding:12px 4px 10px;border-radius:22px;display:grid;justify-items:center;gap:6px;font:500 11.5px/1 var(--f-body);color:var(--mut);transition:background .25s,color .25s,transform .2s}
+.nav{text-align:center;line-height:1.15}
+.nav svg{width:22px;height:22px}
+.nav:hover{color:var(--ink);transform:translateY(-1px)}
+.nav.on{background:var(--btn);color:var(--btn-ink);box-shadow:0 10px 22px var(--shd)}
+.nav:focus-visible{outline:2px solid var(--mari)}
+
+.top{display:flex;flex-wrap:wrap;gap:18px 24px;align-items:flex-end;justify-content:space-between;margin-bottom:26px}
+.hello .eb{font:600 12px/1 var(--f-body);letter-spacing:.14em;text-transform:uppercase;color:var(--mut);margin-bottom:10px}
+.hello h1{font-size:clamp(2.3rem,4.2vw,3.5rem);line-height:1}
+.hello h1 i{font-style:italic;color:var(--mari)}
+.hello p{color:var(--mut);margin-top:8px;max-width:52ch}
+.pills{display:flex;flex-wrap:wrap;gap:10px}
+.pill{display:flex;align-items:center;gap:10px;padding:10px 16px;border-radius:999px;font-size:13.5px;color:var(--mut)}
+.pill b{color:var(--ink);font-weight:700}
+.pill svg{width:18px;height:18px;color:var(--mari)}
+.pill.wx{cursor:pointer;border:0}
+
+#view{animation:rise .45s cubic-bezier(.2,.7,.2,1) both}
+@keyframes rise{from{opacity:.001;transform:translateY(12px)}to{opacity:1;transform:none}}
+.foot{margin-top:34px;display:flex;gap:10px;align-items:center;color:var(--mut);font-size:13px}
+.foot svg{width:16px;height:16px;color:var(--mari);flex:none}
+
+/* ---------- Painted art + photos ---------- */
+.art{display:block;width:100%;height:100%}
+.ph{display:block;width:100%;height:100%;object-fit:cover;background:var(--surf2)}
+.hero .ph{position:absolute;inset:0;z-index:-2;animation:kb 26s ease-in-out infinite alternate}
+@keyframes kb{from{transform:scale(1.02)}to{transform:scale(1.1) translate(-1.5%,-1%)}}
+.darshan{position:relative;overflow:hidden;isolation:isolate;min-height:330px;border-radius:40px 96px 46px 76px;box-shadow:12px 14px 30px var(--shd),-8px -8px 20px var(--shl);background:#140E0A;color:#FFF3DE;display:flex;flex-direction:column;justify-content:flex-end;padding:28px 30px}
+.darshan .sl{position:absolute;inset:0;z-index:-2;opacity:0;transition:opacity 1.4s ease}
+.darshan .sl.on{opacity:1}
+.darshan .sl img{width:100%;height:100%;object-fit:cover;transform:scale(1.04);transition:transform 7s ease-out}
+.darshan .sl.on img{transform:scale(1.12)}
+.darshan::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(20,12,8,0) 28%,rgba(20,12,8,.55) 58%,rgba(20,12,8,.92))}
+.darshan .eb{font:600 11.5px var(--f-body);letter-spacing:.18em;text-transform:uppercase;color:#F6D59A}
+.darshan blockquote{margin:8px 0 0;font:400 italic clamp(1.8rem,2.8vw,2.4rem)/1.1 var(--f-display);color:#FFF3DE;max-width:20ch}
+.darshan cite{display:block;margin-top:8px;font:400 13px var(--f-body);font-style:normal;color:#EADBC3;max-width:42ch}
+.sdots{display:flex;gap:8px;margin-top:16px}
+.sdots button{all:unset;cursor:pointer;width:8px;height:8px;border-radius:999px;background:rgba(255,243,222,.45);transition:width .3s,background .3s}
+.sdots button.on{width:26px;background:#F6D59A}
+.sdots button:focus-visible{outline:2px solid #F6D59A;outline-offset:3px}
+.cl{animation:drift 22s ease-in-out infinite alternate}
+.cl.b{animation-duration:30s;animation-direction:alternate-reverse}
+.sunp{animation:glow 6s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes drift{to{transform:translateX(46px)}}
+@keyframes glow{50%{transform:scale(1.14);opacity:.7}}
+
+/* ---------- Home ---------- */
+.home{display:grid;gap:26px}
+.row1{display:grid;grid-template-columns:minmax(0,1.75fr) minmax(0,1fr);gap:26px}
+.hero{position:relative;min-height:440px;overflow:hidden;isolation:isolate;
+  border-radius:44px 150px 60px 120px / 60px 110px 90px 140px;box-shadow:16px 20px 40px var(--shd),-10px -10px 26px var(--shl);
+  animation:morph 16s ease-in-out infinite alternate}
+@keyframes morph{to{border-radius:120px 60px 140px 50px / 100px 60px 130px 70px}}
+.hero .art{position:absolute;inset:0;z-index:-2}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(100deg,rgba(14,18,44,.78) 0%,rgba(14,18,44,.42) 46%,rgba(14,18,44,0) 72%)}
+.hero-in{padding:52px 48px;max-width:520px;color:#FFF6E6;display:flex;flex-direction:column;gap:14px}
+.hero-in .eb{font:600 11.5px/1 var(--f-body);letter-spacing:.2em;text-transform:uppercase;color:#F6D9A2}
+.hero-in h2{color:#FFF6E6;font-size:clamp(3rem,6vw,5.2rem);line-height:.9}
+.hero-in h2 + .serif{color:#FFF6E6;font-size:1.7rem;font-style:italic;margin-top:-4px}
+.hero-in p{color:#F1E5D2;max-width:40ch}
+.cta{all:unset;box-sizing:border-box;cursor:pointer;display:inline-flex;align-items:center;gap:10px;padding:12px 22px;border-radius:999px;font:600 14px var(--f-body);transition:transform .2s,box-shadow .2s}
+.cta svg{width:18px;height:18px}
+.cta.glass{background:rgba(255,246,230,.16);border:1px solid rgba(255,246,230,.55);color:#FFF6E6;backdrop-filter:blur(6px);align-self:flex-start;margin-top:8px}
+.cta.glass:hover{background:rgba(255,246,230,.28);transform:translateX(2px)}
+.cta.solid{background:var(--btn);color:var(--btn-ink);box-shadow:0 10px 22px var(--shd)}
+.cta.solid:hover{transform:translateY(-1px)}
+.cta:focus-visible{outline:2px solid var(--mari);outline-offset:3px}
+.thumbs{display:flex;gap:10px;margin-top:10px;align-items:center}
+.thumbs button{all:unset;cursor:pointer;width:54px;height:54px;border-radius:50%;overflow:hidden;border:2.5px solid rgba(255,246,230,.85);box-shadow:0 6px 16px rgba(0,0,0,.25);transition:transform .2s}
+.thumbs button:hover{transform:scale(1.08)}
+.thumbs span{font-size:12.5px;color:#F6D9A2;margin-left:4px}
+
+.side{display:grid;gap:22px;align-content:start;position:relative}
+.hand{font:500 2.1rem/1 var(--f-hand);color:var(--indigo);transform:rotate(-8deg);position:absolute;top:-30px;left:-40px;z-index:2;pointer-events:none}
+.hand svg{width:28px;height:28px;color:var(--mari);vertical-align:-4px}
+.wxb{position:relative;overflow:hidden;isolation:isolate;min-height:270px;padding:30px 30px 24px;color:#fff;
+  border-radius:120px 70px 110px 60px / 90px 80px 120px 70px;box-shadow:14px 18px 34px var(--shd),-8px -8px 22px var(--shl);animation:morph2 14s ease-in-out infinite alternate}
+@keyframes morph2{to{border-radius:70px 120px 60px 110px / 80px 120px 70px 100px}}
+.wxb .art{position:absolute;inset:0;z-index:-1}
+.wx-t{font:400 clamp(4rem,7vw,5.4rem)/.9 var(--f-display);color:#fff}
+.wx-c{font:600 16px var(--f-body);margin-top:4px}
+.wx-m{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12.5px;margin-top:10px;color:rgba(255,255,255,.88)}
+.wx-m span{display:flex;align-items:center;gap:5px}.wx-m svg{width:14px;height:14px}
+.wx-loc{display:inline-flex;gap:6px;align-items:center;margin-top:16px;padding:7px 14px;border-radius:999px;background:rgba(255,255,255,.9);color:#1F2A5C;font:600 12.5px var(--f-body)}
+.wx-loc svg{width:14px;height:14px;color:#C2413A}
+.wx-sub{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-top:12px;font-size:12px;color:rgba(255,255,255,.85)}
+.wx-sub button{all:unset;cursor:pointer;display:flex;gap:5px;align-items:center;padding:4px 10px;border-radius:999px;background:rgba(0,0,0,.18)}
+.wx-sub svg{width:13px;height:13px}
+.wx-two{display:flex;justify-content:space-between;gap:12px;padding:16px 20px;align-items:center}
+.wx-two b{font:400 2rem/1 var(--f-display);color:var(--head)}
+.wx-two small{display:block;color:var(--mut);font-size:12.5px}
+
+.next{padding:22px 22px 20px;display:grid;gap:14px}
+.hd{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.hd h3{font-size:1.55rem}
+.link{all:unset;cursor:pointer;font:600 12.5px var(--f-body);color:var(--indigo);display:inline-flex;gap:6px;align-items:center}
+.link svg{width:15px;height:15px}
+.link:hover{text-decoration:underline}
+.nx{display:grid;grid-template-columns:76px 1fr auto;gap:14px;align-items:center}
+.nx .th{width:76px;height:76px;border-radius:20px;overflow:hidden}
+.nx b{font-weight:600}
+.nx small{display:flex;gap:6px;align-items:center;color:var(--mut);font-size:12.5px;margin-top:4px}
+.nx small svg{width:14px;height:14px}
+.round{all:unset;cursor:pointer;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:var(--surf);box-shadow:5px 5px 12px var(--shd),-4px -4px 10px var(--shl);color:var(--ink);transition:transform .2s}
+.round:hover{transform:translateX(2px)}
+.round svg{width:18px;height:18px}
+
+.sec-h{display:flex;justify-content:space-between;align-items:end;gap:16px;margin:4px 6px 16px}
+.sec-h h2{font-size:clamp(1.9rem,3vw,2.4rem);line-height:1.05}
+.sec-h p{color:var(--mut);font-size:13.5px;margin-top:4px}
+.days{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:20px}
+.dc{all:unset;box-sizing:border-box;cursor:pointer;padding:12px 12px 16px;display:grid;gap:12px;border-radius:26px;background:var(--surf);box-shadow:10px 12px 26px var(--shd),-8px -8px 20px var(--shl);transition:transform .25s}
+.dc:hover{transform:translateY(-4px)}
+.dc:focus-visible{outline:2px solid var(--mari);outline-offset:3px}
+.dc .th{height:128px;border-radius:18px;overflow:hidden}
+.dc .meta{padding:0 6px;display:grid;gap:2px}
+.dc .d{font:700 11px/1 var(--f-body);letter-spacing:.14em;text-transform:uppercase;color:var(--mari)}
+.dc h4{font-size:1.4rem;line-height:1.1;margin-top:4px}
+.dc small{color:var(--mut);font-size:12.5px;display:flex;justify-content:space-between;align-items:center;margin-top:6px}
+.dc small i{font-style:normal;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:var(--mist);color:var(--indigo)}
+.dc small i svg{width:15px;height:15px}
+
+.row3{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) minmax(0,.95fr);gap:22px}
+.quote{position:relative;overflow:hidden;isolation:isolate;min-height:250px;padding:30px;border-radius:40px 90px 46px 70px;color:#1F2A5C;box-shadow:12px 14px 30px var(--shd),-8px -8px 20px var(--shl)}
+.quote .art{position:absolute;inset:0;z-index:-1}
+.quote::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(255,250,240,.86),rgba(255,250,240,.35) 62%,rgba(255,250,240,0))}
+.quote .eb{font:600 11.5px var(--f-body);letter-spacing:.16em;text-transform:uppercase;color:#7B5A1E}
+.quote blockquote{margin:10px 0 0;font:400 italic clamp(1.7rem,2.6vw,2.2rem)/1.15 var(--f-display);color:#1F2A5C;max-width:18ch}
+.quote cite{display:block;margin-top:10px;font:500 12.5px var(--f-body);font-style:normal;color:#4A4F6E}
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.tiles .tile:first-child{grid-column:1/-1;grid-template-columns:auto 1fr;justify-items:start;text-align:left;align-items:center;column-gap:14px}.tiles .tile:first-child i{grid-row:span 2}.tiles .tile:first-child small{margin-top:0}
+.tile{all:unset;box-sizing:border-box;cursor:pointer;padding:18px 12px;border-radius:26px;display:grid;justify-items:center;gap:10px;text-align:center;background:var(--surf);box-shadow:8px 10px 22px var(--shd),-7px -7px 18px var(--shl);font:600 13px var(--f-body);transition:transform .2s}
+.tile:hover{transform:translateY(-3px)}
+.tile:focus-visible{outline:2px solid var(--mari)}
+.tile i{width:50px;height:50px;border-radius:18px;display:grid;place-items:center;font-style:normal}
+.tile i svg{width:24px;height:24px}
+.tile small{display:block;font-weight:400;color:var(--mut);font-size:11.5px;margin-top:-6px}
+.mini{padding:24px;display:grid;gap:12px;align-content:start}
+.big{font:400 2.7rem/1 var(--f-display);color:var(--head)}
+.bar{height:12px;border-radius:999px;overflow:hidden}
+.bar i{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,var(--teal),var(--mari));transition:width .8s cubic-bezier(.2,.7,.2,1)}
+.mut{color:var(--mut);font-size:13px}
+
+/* ---------- Itinerary ---------- */
+.dayrow{display:flex;gap:12px;overflow-x:auto;padding:6px 4px 18px;margin:0 -4px 8px;scrollbar-width:thin}
+.dp{all:unset;box-sizing:border-box;cursor:pointer;flex:none;display:flex;gap:12px;align-items:center;padding:10px 20px 10px 10px;border-radius:999px;background:var(--surf);box-shadow:6px 8px 18px var(--shd),-6px -6px 14px var(--shl);transition:background .25s,color .25s}
+.dp .th{width:44px;height:44px;border-radius:50%;overflow:hidden;flex:none}
+.dp b{display:block;font:600 14px var(--f-body)}
+.dp small{display:block;color:var(--mut);font-size:12px}
+.dp.on{background:var(--btn);color:var(--btn-ink)}
+.dp.on small{color:inherit;opacity:.78}
+.dp:focus-visible{outline:2px solid var(--mari);outline-offset:3px}
+.itin{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.35fr);gap:26px;align-items:start}
+.dayhero{overflow:hidden;position:sticky;top:20px}
+.dayhero .th{height:240px;border-radius:24px 24px 60px 24px;overflow:hidden;margin:12px 12px 0}
+.dayhero .bd{padding:22px 26px 26px;display:grid;gap:14px}
+.dayhero h2{font-size:clamp(2rem,3vw,2.6rem);line-height:1.02}
+.dayhero .d{font:700 11.5px var(--f-body);letter-spacing:.16em;text-transform:uppercase;color:var(--mari)}
+.dayhero p{color:var(--mut)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{padding:6px 12px;border-radius:999px;background:var(--chip);color:var(--chip-ink);font:500 12.5px var(--f-body)}
+.stay{display:flex;gap:10px;align-items:center;font-size:13px;color:var(--mut);padding-top:12px;border-top:1px solid var(--line)}
+.stay svg{width:18px;height:18px;color:var(--teal);flex:none}
+.tl{padding:26px 26px 18px}
+.tl ol{list-style:none;margin:0;padding:0;position:relative}
+.tl ol::before{content:"";position:absolute;left:111px;top:10px;bottom:10px;width:2px;background:linear-gradient(var(--mari),var(--teal));opacity:.35;border-radius:2px}
+.tl li{display:grid;grid-template-columns:96px 30px minmax(0,1fr);gap:0 0;padding:10px 0;animation:rise .4s both}
+.tl time{font:600 12.5px/1.4 var(--f-body);color:var(--indigo);padding-top:2px;font-variant-numeric:tabular-nums}
+.tl .dot{width:12px;height:12px;border-radius:50%;background:var(--surf);border:2.5px solid var(--mari);margin:5px 0 0 9px;position:relative;z-index:1}
+.tl li.key .dot{background:var(--mari);box-shadow:0 0 0 5px color-mix(in srgb,var(--mari) 25%,transparent)}
+.tl .tx b{font-weight:600}
+.tl .tx small{display:block;color:var(--mut);font-size:13px;line-height:1.45;margin-top:2px}
+.callouts{display:grid;gap:16px;margin-top:22px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.call{padding:20px 22px;border-radius:24px}
+.call h4{font-size:1.4rem;margin-bottom:8px}
+.call ul{margin:0;padding-left:18px;display:grid;gap:6px;font-size:14px}
+.call.a{background:color-mix(in srgb,var(--mari) 14%,var(--surf))}
+.call.b{background:color-mix(in srgb,var(--teal) 13%,var(--surf))}
+.call.c{background:color-mix(in srgb,var(--lilac) 16%,var(--surf))}
+.call.d{background:color-mix(in srgb,var(--kum) 10%,var(--surf))}
+
+/* ---------- Places ---------- */
+.seg{display:inline-flex;gap:4px;padding:5px;border-radius:999px;margin-bottom:22px}
+.seg button{all:unset;cursor:pointer;padding:10px 20px;border-radius:999px;font:600 13.5px var(--f-body);color:var(--mut);display:flex;gap:8px;align-items:center;transition:background .25s,color .25s}
+.seg button.on{background:var(--surf);color:var(--ink);box-shadow:4px 4px 10px var(--shd),-3px -3px 8px var(--shl)}
+.seg button:focus-visible{outline:2px solid var(--mari)}
+.seg .ring{width:22px;height:22px}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:22px}
+.pc{padding:12px 12px 18px;display:grid;gap:12px;align-content:start;transition:transform .25s}
+.pc:hover{transform:translateY(-3px)}
+.pc .th{height:150px;border-radius:18px 18px 18px 48px;overflow:hidden}
+.pc .bd{padding:0 8px;display:grid;gap:6px}
+.pc b{font:600 15.5px/1.3 var(--f-body)}
+.pc p{color:var(--mut);font-size:13px;line-height:1.45}
+.tag{justify-self:start;font:700 10.5px/1 var(--f-body);letter-spacing:.12em;text-transform:uppercase;padding:6px 10px;border-radius:999px}
+.t-Must,.t-High{background:color-mix(in srgb,var(--kum) 16%,transparent);color:var(--kum)}
+.t-Tonsure,.t-Nearby{background:color-mix(in srgb,var(--teal) 16%,transparent);color:var(--teal)}
+.t-Optional{background:color-mix(in srgb,var(--mari) 18%,transparent);color:color-mix(in srgb,var(--mari) 70%,var(--ink))}
+.t-Skip{background:var(--surf2);color:var(--mut)}
+.note{margin-top:22px;padding:16px 20px;display:flex;gap:12px;align-items:center;font-size:14px}
+.note svg{width:20px;height:20px;color:var(--mari);flex:none}
+
+/* ---------- Packing ---------- */
+.kgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:22px}
+.kc{padding:22px 22px 20px}
+.kc .hd{margin-bottom:12px}
+.kc h3{font-size:1.5rem}
+.kc .ct{font:600 12px var(--f-body);color:var(--mut)}
+.ck{display:flex;gap:12px;align-items:flex-start;padding:8px 0;cursor:pointer;border-top:1px solid var(--line);font-size:14px}
+.ck:first-of-type{border-top:0}
+.ck input{appearance:none;margin:2px 0 0;flex:none;width:20px;height:20px;border-radius:7px;background:var(--surf2);box-shadow:inset 2px 2px 5px var(--shd),inset -2px -2px 5px var(--shl);display:grid;place-items:center;cursor:pointer;transition:background .2s}
+.ck input:checked{background:var(--teal);box-shadow:none}
+.ck input:checked::after{content:"";width:9px;height:5px;border:2px solid #fff;border-top:0;border-right:0;transform:rotate(-45deg) translate(1px,-1px)}
+.ck input:focus-visible{outline:2px solid var(--mari);outline-offset:2px}
+.ck:has(input:checked) span{color:var(--mut);text-decoration:line-through;text-decoration-color:color-mix(in srgb,var(--mut) 60%,transparent)}
+.who{display:flex;gap:16px;align-items:center;margin-bottom:22px;padding:18px 22px}
+.who .art-c{width:64px;height:64px;border-radius:50%;overflow:hidden;flex:none}
+.who h3{font-size:1.7rem}
+.who p{color:var(--mut);font-size:13.5px}
+
+/* ---------- Budget ---------- */
+.bud{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:24px;align-items:start}
+.ringc{padding:26px;display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:center}
+.ring{position:relative;width:170px;height:170px}
+.ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+.ring circle{fill:none;stroke-width:14}
+.ring .tr{stroke:var(--surf2)}
+.ring .pr{stroke:url(#rg);stroke-linecap:round;transition:stroke-dashoffset 1s cubic-bezier(.2,.7,.2,1)}
+.ring .c{position:absolute;inset:0;display:grid;place-content:center;text-align:center}
+.ring .c b{font:400 2.2rem/1 var(--f-display);color:var(--head)}
+.ring .c small{color:var(--mut);font-size:12px}
+.kv{display:grid;gap:12px}
+.kv div{display:flex;justify-content:space-between;gap:12px;font-size:14px;border-bottom:1px dashed var(--line);padding-bottom:8px}
+.kv div:last-child{border:0}
+.kv b{font-weight:700;font-variant-numeric:tabular-nums}
+.cats{padding:24px;display:grid;gap:14px}
+.crow{display:grid;grid-template-columns:110px minmax(0,1fr) auto;gap:12px;align-items:center;font-size:13.5px}
+.crow .bar{height:10px}
+.crow .bar i{background:var(--cc)}
+.crow em{font-style:normal;font-variant-numeric:tabular-nums;color:var(--mut);font-size:12.5px;white-space:nowrap}
+.crow em b{color:var(--ink);font-weight:700}
+.dotc{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--cc);margin-right:8px}
+.log{padding:24px}
+.logs{display:grid;gap:10px;margin-top:14px;max-height:520px;overflow:auto;padding:4px}
+.lr{display:grid;grid-template-columns:40px minmax(0,1fr) auto auto;gap:12px;align-items:center;padding:10px 12px;border-radius:16px;background:var(--bg);animation:rise .35s both}
+.lr i{width:40px;height:40px;border-radius:14px;display:grid;place-items:center;font-style:normal;background:color-mix(in srgb,var(--cc) 18%,transparent);color:var(--cc)}
+.lr i svg{width:18px;height:18px}
+.lr b{font-weight:600;display:block;overflow-wrap:anywhere}
+.lr small{color:var(--mut);font-size:12px}
+.lr .amt{font-weight:700;font-variant-numeric:tabular-nums}
+.lr .del{all:unset;cursor:pointer;color:var(--mut);padding:6px 8px;border-radius:10px;font:600 12px var(--f-body);display:flex;align-items:center}
+.lr .del svg{width:15px;height:15px}
+.lr .del.sure{background:var(--kum);color:#fff}
+.empty{padding:28px 18px;text-align:center;color:var(--mut);display:grid;gap:12px;justify-items:center}
+.empty .art-c{width:90px;height:90px;border-radius:50%;overflow:hidden}
+.sync{display:inline-flex;gap:8px;align-items:center;font-size:12.5px;color:var(--mut)}
+.sync i{width:8px;height:8px;border-radius:50%;background:var(--mut)}
+.sync.live i{background:var(--teal);box-shadow:0 0 0 4px color-mix(in srgb,var(--teal) 22%,transparent)}
+.people{padding:24px;grid-column:1/-1}
+.pgrid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:16px}
+.pp{padding:18px;border-radius:22px;background:var(--bg);display:grid;gap:10px}
+.pp .top2{display:flex;gap:12px;align-items:center}
+.av{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;flex:none;font:700 16px var(--f-body);color:#fff;background:var(--pc)}
+.nm{all:unset;box-sizing:border-box;width:100%;font:600 15px var(--f-body);color:var(--ink);padding:4px 8px;margin-left:-8px;border-radius:10px;cursor:text}
+.nm:hover{background:var(--surf2)}
+.nm:focus{background:var(--surf);box-shadow:inset 0 0 0 1.5px var(--mari)}
+.pp small{color:var(--mut);font-size:12px;display:block}
+.pp .big{font-size:2.2rem}
+.pp .bar i{background:var(--pc)}
+.diff{font-size:12.5px;font-weight:600}
+.diff.up{color:var(--teal)}.diff.dn{color:color-mix(in srgb,var(--mari) 70%,var(--ink))}
+.settle{margin-top:16px;padding:14px 18px;border-radius:18px;background:color-mix(in srgb,var(--teal) 10%,var(--surf));display:grid;gap:6px;font-size:14px}
+.settle b{font-weight:700}
+.fchips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.fchips button{all:unset;cursor:pointer;padding:7px 14px;border-radius:999px;font:600 12.5px var(--f-body);background:var(--surf2);color:var(--mut);display:inline-flex;gap:7px;align-items:center}
+.fchips button i{width:8px;height:8px;border-radius:50%;background:var(--pc)}
+.fchips button.on{background:var(--btn);color:var(--btn-ink)}
+.fchips button:focus-visible{outline:2px solid var(--mari)}
+.paidby{display:inline-flex;gap:4px;align-items:center;margin-left:2px}
+.paidby i{width:20px;height:20px;border-radius:50%;display:inline-grid;place-items:center;font:700 10px var(--f-body);color:#fff;background:var(--pc);font-style:normal;margin-left:-5px;box-shadow:0 0 0 2px var(--bg)}
+.paidby i:first-child{margin-left:0}
+.hint{font-size:12px;color:var(--mut);text-transform:none;letter-spacing:0;font-weight:500}
+.plan{padding:24px;grid-column:1/-1}
+
+/* ---------- Shankar's plan ---------- */
+.sp{display:grid;gap:26px}
+.idx{position:sticky;top:calc(10px + env(safe-area-inset-top,0px));z-index:5;display:flex;gap:8px;overflow-x:auto;padding:8px;border-radius:999px;scrollbar-width:none}
+.idx a{flex:none;padding:8px 14px;border-radius:999px;font:600 12.5px var(--f-body);color:var(--mut);text-decoration:none;transition:background .2s,color .2s}
+.idx a:hover{background:var(--surf2);color:var(--ink)}
+.idx a:focus-visible{outline:2px solid var(--mari)}
+.sp section{scroll-margin-top:90px}
+.spc{padding:24px 26px}
+.spc > .hd{margin-bottom:16px;align-items:flex-start}
+.spc h3{font-size:1.75rem;line-height:1.1}
+.spc .lede{color:var(--mut);font-size:13.5px;margin-top:4px;max-width:60ch}
+.e4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.ed{padding:18px;border-radius:22px;background:var(--bg);display:grid;gap:8px}
+.ed .d{font:700 11px var(--f-body);letter-spacing:.14em;text-transform:uppercase;color:var(--mari)}
+.ed h4{font-size:1.35rem}
+.ed p{font-size:13px;color:var(--mut)}
+.nrg{display:flex;gap:4px}.nrg i{flex:1;height:8px;border-radius:99px;background:var(--surf2)}.nrg i.on{background:var(--ec)}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:0;counter-reset:s}
+.steps li{display:grid;grid-template-columns:44px minmax(0,1fr);gap:16px;padding-bottom:18px;position:relative}
+.steps li::before{counter-increment:s;content:counter(s);width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font:500 1.4rem var(--f-display);background:var(--btn);color:var(--btn-ink);z-index:1}
+.steps li:not(:last-child)::after{content:"";position:absolute;left:21px;top:44px;bottom:0;width:2px;background:var(--line)}
+.steps b{font-weight:600;display:block;padding-top:2px}
+.steps small{display:block;color:var(--mut);font-size:13px;margin-top:2px}
+.g2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
+.live{display:inline-flex;gap:8px;align-items:center;padding:7px 14px;border-radius:999px;font:600 12.5px var(--f-body)}
+.live i{width:8px;height:8px;border-radius:50%;background:currentColor}
+.live.ok{background:color-mix(in srgb,var(--teal) 15%,transparent);color:var(--teal)}
+.live.ok i{animation:pulse 1.8s ease-in-out infinite}
+.live.no{background:var(--surf2);color:var(--mut)}
+@keyframes pulse{50%{opacity:.3}}
+.t24{display:grid;gap:12px;margin-top:6px}
+.t24 .row{display:grid;grid-template-columns:150px minmax(0,1fr);gap:14px;align-items:center;font-size:13px}
+.t24 .row > span b{display:block;font-weight:600}
+.t24 .row > span small{color:var(--mut);font-size:12px;font-variant-numeric:tabular-nums}
+.trk{position:relative;height:26px;border-radius:10px}
+.trk .seg{position:absolute;top:4px;bottom:4px;border-radius:7px;background:var(--sc);opacity:.9}
+.trk .now{position:absolute;top:-4px;bottom:-4px;width:2px;background:var(--kum);border-radius:2px}
+.trk .now::after{content:"Now";position:absolute;top:-16px;left:50%;transform:translateX(-50%);font:700 9.5px var(--f-body);letter-spacing:.08em;text-transform:uppercase;color:var(--kum)}
+.trk .pin{position:absolute;top:-3px;bottom:-3px;width:2px;background:var(--ink);opacity:.6}
+.ticks{display:grid;grid-template-columns:150px minmax(0,1fr);gap:14px;font-size:11px;color:var(--mut)}
+.ticks div{display:flex;justify-content:space-between;font-variant-numeric:tabular-nums}
+.fare{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.fare div{padding:14px;border-radius:18px;background:var(--bg)}
+.fare b{display:block;font:400 1.9rem/1.05 var(--f-display);color:var(--head);font-variant-numeric:tabular-nums}
+.fare small{color:var(--mut);font-size:12px;display:block}
+.fam{margin-top:12px;padding:12px 16px;border-radius:16px;background:color-mix(in srgb,var(--mari) 13%,var(--surf));font-size:13.5px}
+.fam b{font-weight:700}
+.lst{display:grid;gap:0}
+.lst > *{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-top:1px solid var(--line);font-size:14px}
+.lst > *:first-child{border-top:0}
+.lst svg{width:18px;height:18px;flex:none;margin-top:2px;color:var(--teal)}
+.lst a{color:var(--indigo);font-weight:600;text-decoration:none}
+.lst a:hover{text-decoration:underline}
+.lst small{display:block;color:var(--mut);font-size:12.5px}
+.dtype{display:grid;gap:12px}
+.dtype div{padding:14px 16px;border-radius:18px;background:var(--bg);display:grid;grid-template-columns:auto 1fr;gap:4px 14px;align-items:center}
+.dtype abbr{grid-row:span 2;width:48px;height:48px;border-radius:16px;display:grid;place-items:center;font:700 13px var(--f-body);text-decoration:none;background:color-mix(in srgb,var(--dc) 16%,transparent);color:var(--dc)}
+.dtype b{font-weight:600}
+.dtype small{color:var(--mut);font-size:12.5px}
+.seq{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+.seq h4{font-size:1.4rem;display:flex;gap:10px;align-items:baseline}
+.seq h4 span{font:700 11px var(--f-body);letter-spacing:.12em;text-transform:uppercase;color:var(--mari)}
+.path{list-style:none;margin:12px 0 0;padding:0;counter-reset:p}
+.path li{display:grid;grid-template-columns:34px minmax(0,1fr);gap:12px;align-items:center;padding:8px 0;position:relative}
+.path li::before{counter-increment:p;content:counter(p);width:34px;height:34px;border-radius:12px;display:grid;place-items:center;font:700 13px var(--f-body);background:color-mix(in srgb,var(--qc) 16%,transparent);color:var(--qc);z-index:1}
+.path li:not(:last-child)::after{content:"";position:absolute;left:16px;top:42px;height:calc(100% - 34px);width:2px;background:repeating-linear-gradient(var(--qc) 0 4px,transparent 4px 8px);opacity:.5}
+.path b{font-weight:600}
+.path small{display:block;color:var(--mut);font-size:12px}
+.path .last{font:700 10px var(--f-body);letter-spacing:.1em;text-transform:uppercase;padding:3px 8px;border-radius:99px;background:var(--surf2);color:var(--mut);margin-left:6px}
+.flag{display:flex;gap:12px;align-items:flex-start;padding:14px 18px;border-radius:18px;background:color-mix(in srgb,var(--kum) 9%,var(--surf));font-size:13.5px}
+.flag svg{width:18px;height:18px;color:var(--kum);flex:none;margin-top:2px}
+.flag ul{margin:4px 0 0;padding-left:18px;display:grid;gap:4px}
+.src{display:flex;flex-wrap:wrap;gap:8px}
+.src a{padding:6px 12px;border-radius:999px;background:var(--surf2);color:var(--mut);font:500 12.5px var(--f-body);text-decoration:none}
+.src a:hover{color:var(--ink)}
+@media (max-width:980px){.e4{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.t24 .row,.ticks{grid-template-columns:1fr}.ticks span{display:none}.fare{grid-template-columns:1fr 1fr}.fare div:last-child{grid-column:1/-1}.spc{padding:20px 18px}}
+.tw{overflow-x:auto;margin-top:12px}
+table{width:100%;border-collapse:collapse;font-size:14px;min-width:520px}
+th{text-align:left;font:600 11.5px var(--f-body);letter-spacing:.1em;text-transform:uppercase;color:var(--mut);padding:8px 10px}
+td{padding:10px;border-top:1px solid var(--line);font-variant-numeric:tabular-nums}
+td:nth-child(n+2),th:nth-child(n+2){text-align:right;white-space:nowrap}
+tfoot td{font-weight:700;border-top:2px solid var(--line)}
+.disc{margin-top:12px;font-size:12.5px;color:var(--mut)}
+
+/* ---------- FAB + sheet ---------- */
+.fab{all:unset;box-sizing:border-box;cursor:pointer;position:fixed;z-index:20;right:calc(28px + env(safe-area-inset-right,0px));bottom:calc(28px + env(safe-area-inset-bottom,0px));display:flex;align-items:center;gap:10px;padding:16px 24px 16px 18px;border-radius:999px;background:var(--btn);color:var(--btn-ink);font:700 14.5px var(--f-body);box-shadow:0 16px 34px var(--shd);transition:transform .2s}
+.fab svg{width:20px;height:20px}
+.fab:hover{transform:translateY(-2px) rotate(-1deg)}
+.fab:focus-visible{outline:3px solid var(--mari);outline-offset:3px}
+.scrim{position:fixed;inset:0;z-index:30;background:rgba(10,12,28,.42);backdrop-filter:blur(4px);display:grid;place-items:end center;padding:16px;padding-bottom:calc(16px + env(safe-area-inset-bottom,0px));animation:fade .25s both}
+@keyframes fade{from{opacity:0}}
+.sheet{width:min(520px,100%);max-height:calc(100% - 20px);overflow:auto;padding:26px;border-radius:32px;animation:up .35s cubic-bezier(.2,.8,.2,1) both}
+@keyframes up{from{transform:translateY(30px);opacity:.3}}
+.sheet h3{font-size:1.9rem}
+.sheet form{display:grid;gap:16px;margin-top:16px}
+.amt-in{display:flex;align-items:center;gap:6px;padding:14px 20px}
+.amt-in span{font:400 2.4rem var(--f-display);color:var(--mut)}
+.amt-in input{all:unset;width:100%;font:400 2.8rem/1 var(--f-display);color:var(--head);font-variant-numeric:tabular-nums}
+.fld{display:grid;gap:8px}
+.fld > span{font:600 11.5px var(--f-body);letter-spacing:.12em;text-transform:uppercase;color:var(--mut)}
+.txt{all:unset;box-sizing:border-box;width:100%;padding:13px 16px;font:500 15px var(--f-body);color:var(--ink)}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opts label{cursor:pointer}
+.opts input{position:absolute;opacity:0;pointer-events:none}
+.opts label span{display:inline-flex;gap:6px;align-items:center;padding:8px 14px;border-radius:999px;font:600 13px var(--f-body);background:var(--surf2);color:var(--mut);transition:.2s}
+.opts input:checked + span{background:var(--btn);color:var(--btn-ink)}
+.opts input:focus-visible + span{outline:2px solid var(--mari);outline-offset:2px}
+.quick{display:flex;flex-wrap:wrap;gap:8px}
+.quick button{all:unset;cursor:pointer;padding:6px 12px;border-radius:999px;border:1px dashed var(--line);font-size:12.5px;color:var(--mut)}
+.quick button:hover{border-color:var(--mari);color:var(--ink)}
+.acts{display:flex;gap:12px;justify-content:flex-end;align-items:center;margin-top:4px}
+.ghost{all:unset;cursor:pointer;padding:12px 18px;border-radius:999px;font:600 14px var(--f-body);color:var(--mut)}
+.err{color:var(--kum);font-size:13px;min-height:1em}
+.toast{position:fixed;z-index:40;left:50%;bottom:calc(100px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);padding:12px 20px;border-radius:999px;background:var(--ink);color:var(--bg);font:600 13.5px var(--f-body);box-shadow:0 12px 30px var(--shd);animation:up .3s both}
+
+/* ---------- Responsive ---------- */
+@media (max-width:1180px){
+  .days{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .row3{grid-template-columns:1fr 1fr}.row3 .darshan{grid-column:1/-1}
+}
+@media (max-width:980px){
+  .row1,.itin,.bud{grid-template-columns:1fr}
+  .side{grid-template-columns:1fr 1fr}.side .next{grid-column:1/-1}
+  .hand{display:none}
+  .dayhero{position:static}
+}
+@media (max-width:760px){
+  body{padding-block:14px 150px}
+  .app{grid-template-columns:1fr;gap:0}
+  .rail{position:fixed;z-index:25;top:auto;bottom:0;left:0;right:0;flex-direction:row;justify-content:space-around;gap:2px;border-radius:28px 28px 0 0;
+    padding:8px max(10px,env(safe-area-inset-left,0px)) calc(8px + env(safe-area-inset-bottom,0px)) max(10px,env(safe-area-inset-right,0px))}
+  .mark{display:none}
+  .nav{width:auto;flex:1;padding:10px 2px 8px;font-size:11px}
+  .fab{bottom:calc(92px + env(safe-area-inset-bottom,0px));right:calc(16px + env(safe-area-inset-right,0px));padding:14px}
+  .fab span{display:none}
+  .hero{min-height:420px}
+  .hero-in{padding:34px 26px}
+  .side{grid-template-columns:1fr}
+  .days{grid-template-columns:1fr 1fr}
+  .row3{grid-template-columns:1fr}
+  .ringc{grid-template-columns:1fr;justify-items:center}
+  .crow{grid-template-columns:86px minmax(0,1fr) auto}
+  .tl{padding:20px 16px}
+  .tl ol::before{left:85px}
+  .tl li{grid-template-columns:72px 28px minmax(0,1fr)}
+  .tl time{font-size:11.5px}
+  .top{margin-bottom:20px}
+}
+@media (max-width:420px){.days{grid-template-columns:1fr}.dc .th{height:150px}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <filter id="paint" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.028 0.05" numOctaves="2" seed="7" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="10" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix values="0 0 0 0 1  0 0 0 0 .96  0 0 0 0 .9  0 0 0 .55 -.18"/>
+    </filter>
+    <linearGradient id="rg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2F7F7A"/><stop offset="1" stop-color="#E8A33D"/></linearGradient>
+  </defs>
+</svg>
+
+<div class="app">
+  <aside class="rail soft" aria-label="Sections">
+    <div class="mark" aria-hidden="true">
+      <svg viewBox="0 0 36 30" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 27c4-5 6-8 9-8s4 3 7 3 4-7 8-7 5 6 8 12"/><path d="M15 12h6l-.8-3h-4.4zM16 9l.8-3h2.4l.8 3M18 6V3"/></svg>
+      <span>Yatra</span>
+    </div>
+    <div id="nav" style="display:contents"></div>
+  </aside>
+
+  <main>
+    <header class="top">
+      <div class="hello">
+        <div class="eb" id="eb">17 – 20 November 2026</div>
+        <h1 id="h1">Namaste</h1>
+        <p id="sub"></p>
+      </div>
+      <div class="pills">
+        <div class="pill soft"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 6h16v14H4zM4 10h16M8 3v4M16 3v4"/></svg><span id="cd"></span></div>
+        <button class="pill soft wx" id="wxpill" title="Open the weather on Home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><span>Tirumala <b class="tab" id="wxp">--°</b></span></button>
+      </div>
+    </header>
+    <section id="view" aria-live="polite"></section>
+    <div class="foot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 3c2 3 3 5 3 7a3 3 0 0 1-6 0c0-2 1-4 3-7zM5 18c2 2 4.5 3 7 3s5-1 7-3"/></svg>Verify live TTD rules, infant-entry conditions and fares in the week before you travel · tirumala.org</div>
+  </main>
+</div>
+
+<button class="fab" id="fab" aria-label="Add expense"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg><span>Add expense</span></button>
+<div id="sheet" hidden></div>
+<div id="toast" hidden></div>
+
+<script>
+(function(){
+var $=function(s,r){return (r||document).querySelector(s)};
+var esc=function(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
+var inr=function(n){return '₹'+Math.round(Number(n)||0).toLocaleString('en-IN')};
+
+/* ---------------- Icons ---------------- */
+var IP={home:'M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z',route:'M6 21a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM18 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM6 17V11a4 4 0 0 1 4-4h6M18 7v6a4 4 0 0 1-4 4H9',pin:'M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11zM12 12.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z',bag:'M5 8h14l-1.2 12H6.2zM9 8V6a3 3 0 0 1 6 0v2',wallet:'M3 7a2 2 0 0 1 2-2h12v4M3 7v10a2 2 0 0 0 2 2h14V9H5a2 2 0 0 1-2-2zM16 14h.01',plus:'M12 5v14M5 12h14',arrow:'M5 12h14M13 6l6 6-6 6',clock:'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM12 7v5l3 2',drop:'M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z',wind:'M3 8h11a3 3 0 1 0-3-3M3 16h15a3 3 0 1 1-3 3M3 12h7',hotel:'M3 20V6M3 14h18v6M21 14v-3a3 3 0 0 0-3-3h-7v6M7 11.5h.01',refresh:'M20 11a8 8 0 1 0-2.3 5.7M20 4v7h-7',x:'M6 6l12 12M18 6L6 18',users:'M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM2 21v-1a6 6 0 0 1 12 0v1M16 3.5a4 4 0 0 1 0 7.5M22 21v-1a6 6 0 0 0-4-5.6',therm:'M14 14.8V5a2 2 0 0 0-4 0v9.8a4 4 0 1 0 4 0z',car:'M5 16h14M6 16l1.5-6h9L18 16M7 19a1.5 1.5 0 1 0 0-.01M17 19a1.5 1.5 0 1 0 0-.01M4 16v3M20 16v3',bowl:'M3 11h18a9 9 0 0 1-18 0zM8 7c0-1 1-1.5 1-3M12 7c0-1 1-1.5 1-3M16 7c0-1 1-1.5 1-3',baby:'M12 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM7 21l2-9h6l2 9M9 14l-3 2M15 14l3 2',lamp:'M12 3c2 3 3 5 3 7a3 3 0 0 1-6 0c0-2 1-4 3-7zM5 18c2 2 4.5 3 7 3s5-1 7-3',bed:'M3 19V7M3 13h18v6M21 13v-2a3 3 0 0 0-3-3h-8v5',dots:'M6 12h.01M12 12h.01M18 12h.01',flag:'M5 21V4M5 4h12l-2.5 4L17 12H5',cal:'M4 6h16v14H4zM4 10h16M8 3v4M16 3v4'};
+function ic(n,w){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="'+(w||1.8)+'" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="'+IP[n]+'"/></svg>'}
+
+/* ---------------- Painted scenes ---------------- */
+var SKY={dawn:['#24306B','#6B5C9E','#F0A955'],day:['#3E6FB8','#8FB4E0','#F6DFAE'],dusk:['#2C2462','#8A4F7D','#F08A5D'],noon:['#2D5FA8','#79A7DA','#E9EFF5'],teal:['#1E4E63','#4F8F95','#E7D6A8'],night:['#0F1433','#2A2F6B','#6B5C9E']};
+var artN=0;
+function rnd(seed){var s=seed%2147483647;if(s<=0)s+=2147483646;return function(){s=s*16807%2147483647;return (s-1)/2147483646}}
+function ridge(r,base,amp,step,w){w=w||400;var d='M-20 270L-20 '+base,x=-20;while(x<w+20){var nx=x+step;d+=' Q'+(x+step/2).toFixed(0)+' '+(base-amp*(.55+r()*.6)).toFixed(0)+' '+nx+' '+(base-amp*r()*.35).toFixed(0);x=nx}return d+' L'+(w+20)+' 270Z'}
+function vimana(x,y,s,c){var p='';var tiers=[[34,8],[26,8],[18,7]];var yy=y;tiers.forEach(function(t){p+='<rect x="'+(x-t[0]*s/2)+'" y="'+(yy-t[1]*s)+'" width="'+t[0]*s+'" height="'+t[1]*s+'" fill="'+c+'"/>';yy-=t[1]*s});
+  p+='<path d="M'+(x-11*s)+' '+yy+'Q'+x+' '+(yy-16*s)+' '+(x+11*s)+' '+yy+'Z" fill="'+c+'"/><rect x="'+(x-1.2*s)+'" y="'+(yy-20*s)+'" width="'+2.4*s+'" height="'+7*s+'" rx="'+s+'" fill="'+c+'"/>';return p}
+function gopuram(x,y,s,c,c2){var p='',yy=y,w=46;for(var i=0;i<6;i++){var h=11;p+='<path d="M'+(x-w*s/2)+' '+yy+'L'+(x-(w-5)*s/2)+' '+(yy-h*s)+'L'+(x+(w-5)*s/2)+' '+(yy-h*s)+'L'+(x+w*s/2)+' '+yy+'Z" fill="'+c+'"/><rect x="'+(x-(w-6)*s/2)+'" y="'+(yy-h*s+1.5*s)+'" width="'+(w-6)*s+'" height="'+1.4*s+'" fill="'+c2+'" opacity=".55"/>';yy-=h*s;w-=5}
+  p+='<path d="M'+(x-14*s)+' '+yy+'Q'+x+' '+(yy-12*s)+' '+(x+14*s)+' '+yy+'Z" fill="'+c+'"/><path d="M'+(x-6*s)+' '+y+'v'+(-14*s)+'a'+6*s+' '+6*s+' 0 0 1 '+12*s+' 0v'+14*s+'z" fill="'+c2+'" opacity=".7"/>';return p}
+function art(kind,seed,o){o=o||{};var r=rnd(seed*7919+31),id='a'+(++artN),sk=SKY[o.sky||({hills:'dawn',queue:'night',temple:'day',gopuram:'day',water:'noon',falls:'teal',rock:'dusk',fort:'dusk',lotus:'dawn',feet:'teal',plane:'dusk',compass:'night',sun:'day',cloud:'noon',rain:'teal',bed:'night',bag:'day'}[kind]||'dawn')];
+  var sx=o.sx!=null?o.sx:(60+r()*280),sy=o.sy!=null?o.sy:(50+r()*50);
+  var s='<svg class="art" viewBox="0 0 400 260" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><linearGradient id="'+id+'s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="'+sk[0]+'"/><stop offset=".55" stop-color="'+sk[1]+'"/><stop offset="1" stop-color="'+sk[2]+'"/></linearGradient><radialGradient id="'+id+'g"><stop offset="0" stop-color="#FFE6A6" stop-opacity=".95"/><stop offset="1" stop-color="#FFE6A6" stop-opacity="0"/></radialGradient><linearGradient id="'+id+'w" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3C6FB0"/><stop offset="1" stop-color="#1D3E78"/></linearGradient></defs>';
+  s+='<rect width="400" height="260" fill="url(#'+id+'s)"/>';
+  if(kind!=='rain'){s+='<circle class="sunp" cx="'+sx+'" cy="'+sy+'" r="70" fill="url(#'+id+'g)"/><circle cx="'+sx+'" cy="'+sy+'" r="'+(o.sr||19)+'" fill="'+(kind==='queue'||kind==='compass'||kind==='bed'?'#F4E9C8':'#FCD27B')+'"/>'}
+  /* brush strokes in sky */
+  s+='<g fill="none" stroke-linecap="round" opacity=".32">';for(var i=0;i<7;i++){var y=18+r()*110,x=r()*300;s+='<path d="M'+x+' '+y+'q'+(30+r()*40)+' '+(-6+r()*12)+' '+(70+r()*90)+' 0" stroke="'+(r()>.5?'#FFFFFF':sk[2])+'" stroke-width="'+(3+r()*6)+'" stroke-dasharray="'+(20+r()*40)+' '+(6+r()*14)+'"/>'}s+='</g>';
+  /* clouds */
+  s+='<g class="cl" fill="#FFFFFF" opacity=".55"><ellipse cx="'+(40+r()*120)+'" cy="'+(40+r()*30)+'" rx="38" ry="10"/><ellipse cx="'+(70+r()*120)+'" cy="'+(32+r()*30)+'" rx="22" ry="9"/></g><g class="cl b" fill="#FFFFFF" opacity=".35"><ellipse cx="'+(230+r()*120)+'" cy="'+(70+r()*30)+'" rx="44" ry="9"/></g>';
+  if(kind==='rain'){s+='<g fill="#E8EEF6" opacity=".9"><ellipse cx="140" cy="80" rx="80" ry="26"/><ellipse cx="220" cy="70" rx="70" ry="30"/><ellipse cx="290" cy="90" rx="60" ry="22"/></g><g stroke="#E8EEF6" stroke-width="2" opacity=".6" stroke-linecap="round">';for(i=0;i<26;i++){var rx=60+r()*290,ry=110+r()*80;s+='<path d="M'+rx+' '+ry+'l-6 16"/>'}s+='</g>'}
+  s+='<g filter="url(#paint)">';
+  var h0='#4B5A9A',h1='#2F4E7A',h2='#1F3B4E',gold='#E9B44C';
+  if(kind==='night'||kind==='queue'||kind==='compass'||kind==='bed'){h0='#3A3F7A';h1='#252B5A';h2='#151A3C'}
+  if(kind==='rock'||kind==='fort'||kind==='plane'){h0='#7A4F7A';h1='#4E3866';h2='#2E2448'}
+  if(kind==='feet'||kind==='falls'){h0='#3D7A78';h1='#2A5E5C';h2='#1B4241'}
+  s+='<path d="'+ridge(r,170,60,70)+'" fill="'+h0+'" opacity=".75"/>';
+  s+='<path d="'+ridge(r,200,46,90)+'" fill="'+h1+'"/>';
+  if(kind==='hills'){s+=vimana(o.vx||262,184,1.25,gold)}
+  if(kind==='queue'){s+='<rect x="70" y="160" width="260" height="34" fill="#C9B07A"/>';for(i=0;i<9;i++){s+='<path d="M'+(80+i*28)+' 194v-18a9 9 0 0 1 18 0v18z" fill="#2A2650"/>'}s+='<rect x="64" y="154" width="272" height="7" fill="#E9C47A"/>'+vimana(350,160,.7,gold)}
+  if(kind==='gopuram'||kind==='temple'){s+=gopuram(o.gx||210,212,1.35,'#E6C9A0','#9A5A3A')}
+  if(kind==='water'||kind==='lotus'){s+='<rect x="-10" y="196" width="420" height="80" fill="url(#'+id+'w)"/>';for(i=0;i<8;i++){s+='<path d="M'+(r()*360)+' '+(206+r()*48)+'h'+(20+r()*50)+'" stroke="#CFE0F5" stroke-width="2.5" stroke-linecap="round" opacity=".6"/>'}
+    if(kind==='water'){s+='<path d="M290 196h120v12H302zM300 208h110v12H312zM310 220h100v12H322z" fill="#D9C39A"/>'}
+    if(kind==='lotus'){[[120,228],[220,240],[300,222]].forEach(function(p){s+='<g transform="translate('+p[0]+' '+p[1]+')"><ellipse rx="26" ry="5" fill="#3E7E54"/><path d="M0 -2C-6 -10-4-20 0-26C4-20 6-10 0-2z" fill="#F2A7B5"/><path d="M-2 -2C-14 -6-18-14-16-20C-8-16-4-10-2-2zM2 -2C14 -6 18-14 16-20C8-16 4-10 2-2z" fill="#E987A0"/></g>'})}}
+  if(kind==='falls'){s+='<path d="M180 120h60v150h-60z" fill="#2A5E5C"/><g stroke="#E8F4F2" stroke-width="5" stroke-linecap="round" opacity=".85">';for(i=0;i<6;i++){s+='<path d="M'+(190+i*8)+' 126v'+(90+r()*40)+'" stroke-dasharray="'+(14+r()*10)+' 6"/>'}s+='</g><ellipse cx="210" cy="232" rx="70" ry="14" fill="#BFE0E4" opacity=".7"/>'}
+  if(kind==='rock'){s+='<path d="M110 222C112 150 150 110 200 110s88 40 90 112h-34c-2-50-24-78-56-78s-54 28-56 78z" fill="#9A6A4A"/><path d="M118 214c10-40 30-66 52-80" stroke="#C99A72" stroke-width="5" fill="none" opacity=".7"/>'}
+  if(kind==='fort'){s+='<path d="M120 200V150h20v-10h12v10h18v-10h12v10h18v-10h12v10h18v-10h12v10h20v50z" fill="#B88A6A"/><path d="M196 200v-24a8 8 0 0 1 16 0v24z" fill="#3A2848"/>'}
+  if(kind==='feet'){s+='<path d="M120 270C150 230 260 230 220 190s40-50 80-60" fill="none" stroke="#E9D8B0" stroke-width="18" stroke-linecap="round" opacity=".8"/>'}
+  if(kind==='plane'){s+='<path d="M40 150C140 120 230 110 330 70" fill="none" stroke="#FFF2D8" stroke-width="2.5" stroke-dasharray="7 7" opacity=".8"/><path d="M330 70l18-8-6 10 10 6-12 0-4 10-2-12-12 0z" fill="#FFF6E6"/>'}
+  if(kind==='bag'){s+='<rect x="160" y="140" width="80" height="62" rx="12" fill="#E9B44C"/><path d="M182 140v-10a18 18 0 0 1 36 0v10" stroke="#E9B44C" stroke-width="7" fill="none"/>'}
+  s+='<path d="'+ridge(r,232,24,110)+'" fill="'+h2+'"/>';
+  s+='</g><rect width="400" height="260" filter="url(#grain)" opacity=".5" style="mix-blend-mode:soft-light"/></svg>';
+  return s}
+
+/* ---------------- Photos ---------------- */
+var IMG={'gopuram-sunset':'Temple gopuram at sunset','deity-painting':'Painting of Sri Venkateswara Swamy in a golden arch','deity-profile':'Sri Venkateswara Swamy in warm lamplight','temple-pilgrims':'Temple courtyard and gopuram at sunset with pilgrims','deity-night':'Sri Venkateswara Swamy under a starry sky','deity-alankaram':'Sri Venkateswara Swamy in full alankaram','tirumala-dusk':'Tirumala temple complex lit up at dusk'};
+function ph(n,pos,eager){return '<img class="ph" src="img/'+n+'.jpg" alt="'+IMG[n]+'"'+(eager?'':' loading="lazy"')+' style="object-position:'+(pos||'center')+'">'}
+var DAYIMG={0:['tirumala-dusk','center'],1:['deity-profile','50% 22%'],2:['gopuram-sunset','62% 40%']};
+function dayMedia(i){var d=DAYIMG[i];return d?ph(d[0],d[1]):art(ITIN[i][2],10+i)}
+function placeMedia(p,seed){return p[4]?ph(p[4],p[5]):art(p[0],seed)}
+var SLIDES=[['deity-painting','50% 22%','Om Namo Venkatesaya'],['deity-night','50% 30%','Govinda, Govinda'],['deity-alankaram','50% 16%','Om Namo Venkatesaya'],['deity-profile','50% 24%','Govinda, Govinda']];
+var slideI=0,slideTimer=null;
+
+/* ---------------- Trip data ---------------- */
+var TRIP_START=new Date('2026-11-17T02:00:00+05:30'),TRIP_END=new Date('2026-11-20T23:59:00+05:30');
+var ITIN=[
+['Tue 17 Nov','Arrival + Tirumala','hills',[['2:00 AM','Leave Sai Enclave','Cab ₹1,100 to Navi Mumbai airport. Confirm pickup time, terminal and luggage space.'],['2:00–5:00','Travel to airport','Allow for traffic. Keep IDs, tickets and baby bag handy.'],['5:00 AM','Reach airport','Check-in closes 6:00 AM; do not arrive later.'],['5:00–6:00','Check-in and security','Follow current baggage and power-bank rules.'],['7:00–8:50','Flight to Tirupati','Feeding supplies and a spare outfit in the cabin bag.',1],['8:50–9:30','Land, collect luggage','Allow time to regroup.'],['9:30–10:30','Airport → apartment','A pre-booked cab is simplest with family and luggage.'],['10:30–11:30','Check in, freshen up','Ask about early check-in, or luggage storage and a place to rest.'],['11:30–12:30','Rest','Mom sits down; baby feeds and settles.'],['12:30–1:30','Lunch','Simple meal close to the apartment.'],['1:30–2:00','Prepare the Tirumala bag','IDs, baby essentials, water, light layers only.'],['2:00–3:30','Travel to Tirumala, if rested','APSRTC bus is cheapest; a pre-booked cab is more comfortable.'],['3:30–5:30','Tonsure, if practical','TTD Kalyanakatta. Generally free; waiting time varies.',1],['5:30–6:30','Wash up and recover','Do not rush from tonsure into several temples.'],['6:30–7:30','Light meal','Keep the baby’s normal feeding routine.'],['7:30–8:30','Review darshan arrangements','Confirm the reporting point and current infant-entry rules.'],['8:30 PM on','Rest at an arranged place','Do not assume a PAC bed; confirm before staying on the hill.']],['Kalyanakatta · tonsure if practical','Vaikuntam Queue Complex · only if you choose Dharma Darshan'],'You are awake since 2 AM with an infant, so skip most sights. Reach the apartment safely, rest, and decide whether going up this afternoon is realistic. Do not automatically commit to a long overnight queue today.',[['Day 1 decision point',['If TTD confirms the infant-parent route: plan around its reporting instructions and who may accompany the parents.','If using Dharma (free Sarva) Darshan, about 24 hours in line: check the live queue, use the re-entry token if needed, and agree a plan for Mom and baby before joining.','If everyone is exhausted: choose rest over sightseeing and adjust the next day.']]]],
+['Wed 18 Nov','Birthday + main darshan','queue',[['5:30–6:00','Wake and freshen up','On the hill, use your confirmed stay. From Tirupati, leave per the verified reporting time and ghat-road rules.'],['6:00–7:00','Breakfast, baby feed','Pack nappies, wipes, feeding kit, clothes, IDs and age proof.'],['7:00–8:00','Reach the reporting area','Follow exact TTD instructions, not a map pin or unofficial advice.'],['8:00–10:30','Infant-parent entry, if confirmed','A planning window, not a guarantee. Only permitted people join.',1],['10:30–12:00','Darshan buffer','Do not book a fixed-time taxi right after.'],['12:00–1:00','Lunch or prasadam','Eat, hydrate, take a proper break.'],['1:00–2:00','Rest','Especially important for Mom and baby.'],['2:00–3:00','Bedi Anjaneya Swamy, if convenient','Nearby and optional; check access.'],['3:00–4:00','Swami Pushkarini, Bhu Varaha Swamy','Close to the main temple; check access and walking routes.'],['4:00–5:30','Return toward Tirupati','Bus or pre-arranged cab; allow for boarding and traffic.'],['5:30–6:30','Hotel rest','Freshen up and feed the baby.'],['6:30–7:30','Birthday dinner','Keep it simple; no more travel tonight.',1],['7:30 PM on','Rest and sleep','Likely tiring if darshan runs long.']],['Sri Venkateswara Swamy Temple · must visit','Bhu Varaha Swamy · if accessible','Swami Pushkarini · follow access rules','Bedi Anjaneya Swamy · optional'],'Your highest-priority day: main temple first, other sights only with energy left. TTD’s FAQ lists an infant-parent Supadam window of 8:30–10:30 AM, but online guidance is inconsistent. Confirm timing, reporting point, documents and who may accompany you.',[['If the infant-parent route is not available',['Dharma (free Sarva) Darshan for the whole group, about 24 hours in busy periods, only if everyone is comfortable with an uncertain wait.','A revised plan agreed by the family if Mom or baby cannot manage the queue.','Drop all optional sightseeing and save energy for the main temple.','No one can promise darshan at a set time after joining at 1–2 AM; waits at the Vaikuntham Queue Complex vary.']],['Skip on your birthday',['Akasa Ganga, Papavinasanam, Silathoranam and Srivari Padalu need extra transport or walking.']]]],
+['Thu 19 Nov','Tirupati city temples','gopuram',[['7:30–8:30','Wake slowly','Sleep longer if yesterday was exhausting.'],['8:30–9:00','Breakfast','Pack water, IDs and a small baby bag.'],['9:00–11:00','Sri Padmavathi Ammavari, Tiruchanur','First choice; check timings and dress guidance.',1],['11:00–12:00','Return to hotel','Allow for transport and crowds.'],['12:00–1:00','Lunch','Relaxed meal near the apartment.'],['1:00–2:30','Rest, baby nap','Keep this block free.'],['2:30–4:00','Sri Govindaraja Swamy Temple','If rested and the temple is open.',1],['4:00–5:00','Kapila Theertham, optional','Only if everyone is comfortable.'],['5:00–6:00','Return to hotel','No distant attractions late in the day.'],['6:00–7:00','Pack for the flight','Tickets, IDs, chargers and baby essentials handy.'],['7:00–8:00','Dinner','Eat early.'],['8:30–9:00','Sleep','Next morning starts early.']],['Padmavathi Ammavari · high priority','Govindaraja Swamy · second visit','Kapila Theertham · optional'],'Deliberately lighter. If darshan ran long on your birthday, rest this morning and visit only one or two temples.',[['Skip',['Chandragiri Fort and Talakona add travel time before a very early flight.']]]],
+['Fri 20 Nov','Return to Mumbai','plane',[['Night before','Confirm the cab','Confirm the 6:00 AM pickup and save the driver’s number.'],['4:45–5:30','Wake and get ready','Pack the night before.'],['5:30–5:45','Final room check','Chargers, cupboards, bathroom, documents, baby items.'],['6:00 AM','Leave the apartment','Pre-arranged transport to Tirupati airport.'],['7:00 AM','Reach airport','Check-in closes 8:20 AM.'],['7:00–8:20','Check-in and security','Follow current airline requirements.'],['9:20–10:55','Flight to Mumbai','Feeding and changing supplies in the cabin bag.',1],['After 10:55','Collect baggage, meet cab','Confirm the pickup point before landing.'],['Then','Travel home','₹1,100 was the outbound fare; confirm the return fare separately.']],[],'Early departure and the return flight. Add no sightseeing today.',[]],
+['Key decisions','Where to sleep on 17 Nov','compass',[],[],'This shapes the whole birthday plan, so settle it before you go.',[['Option A: stay in Tirupati on the 17th',['More predictable rest: arrive, check in, eat and rest.','Go up on the 18th at the confirmed reporting time.','No reliance on an unconfirmed PAC bed.','Trade-off: transport must be planned around the reporting time and ghat-road restrictions.']],['Option B: go to Tirumala on the 17th',['Rest after arrival, then go uphill; tonsure if feasible.','Stay overnight only with a confirmed, suitable place to rest.','Trade-off: travel and tonsure after a 2 AM wake-up can be tiring.']],['Ghat road',['TTD notes a night restriction on the Tirupati–Tirumala ghat road from 12:00 AM to 3:00 AM. Check the latest rule before planning a pre-dawn transfer.']],['Final rules',['Darshan first, sightseeing second.','Tonsure on the 17th only if it does not exhaust everyone.','Do not assume all four of you qualify for infant-parent entry.','Do not plan around an unconfirmed queue time or an assumed PAC bed.','Keep the baby’s feeding, changing and sleep windows flexible.','Keep the 19th light enough to recover and pack.','Add no extra sightseeing on the 20th.']]]]];
+var TML=[['queue','Vaikuntam Queue Complex · Dharma Darshan','Must','Free queue, about 24 hours in busy periods; re-entry token available','tirumala-dusk','center'],['hills','Sri Venkateswara Swamy Temple','Must','Darshan at the end of the queue; no phones inside','deity-alankaram','50% 14%'],['temple','Kalyanakatta','Tonsure','Free per TTD; keep time flexible'],['water','Swami Pushkarini','Nearby','Sacred tank; follow access rules'],['gopuram','Sri Bhu Varaha Swamy','Nearby','Close to the tank; check entry'],['hills','Bedi Anjaneya Swamy','Optional','Near the main temple, after darshan'],['rock','Silathoranam','Optional','Natural rock arch; needs a vehicle'],['falls','Akasa Ganga','Optional','Waterfall area; access varies'],['falls','Papavinasanam','Optional','Never squeeze in before darshan'],['feet','Srivari Padalu / Japali','Optional','Extra walking; only if energy allows']];
+var TPT=[['lotus','Padmavathi Ammavari, Tiruchanur','High','Bus about ₹3; check timings and dress'],['gopuram','Govindaraja Swamy Temple','High','Central; often walkable from the city','gopuram-sunset','62% 40%'],['falls','Kapila Theertham','Optional','Short visit if rested; water may be closed'],['temple','Kalyana Venkateswara, Srinivasa Mangapuram','Optional','Outside the city; needs transport'],['fort','Chandragiri Fort / Talakona','Skip','Too tiring on a short, baby-led trip']];
+var PEOPLE=[['mittu','Mittu','Documents, her essentials and the darshan plan','lotus'],['maa','Maa','Documents, clothing, health and comfort','temple'],['mihasha','Mihasha','The baby bag, care and safety','sun']];
+var L={
+mittu:[['Documents',['Photo ID (original + copies)','Mihasha’s birth certificate or age proof, originals','Both parents’ IDs','Hotel address and emergency contacts']],['Her essentials',['Spare top and nursing cover','Shawl for early mornings','Personal medicines','Sanitiser, tissues, sealed bag for soiled clothes']],['Darshan plan',['Agree the fallback before leaving home','One adult can step out with the baby anytime','Feed and change before joining any queue','Never decide in a crowded line','Plan for about 24 hours in line: carry feeds and snacks']]],
+maa:[['Documents and money',['Original photo ID + 2 photocopies','Small cash kept apart from the wallet','Hotel, Mittu’s and one emergency number written down']],['Clothing',['2 temple-appropriate outfits + 1 spare set','Slip-on footwear for temple areas','Shawl or cardigan','Underwear, nightwear, towel, toiletries']],['Health and comfort',['Medicines in original packs, 5 days’ worth','Medication list and doctor contact','Water bottle, snacks, sanitiser','Sit and hydrate often; stop and seek help if dizzy or breathless']]],
+mihasha:[['Feeding',['Milk or formula, measured portions','Clean bottles and feeding kit','Safe water plan','Bibs and burp cloths','Enough feeds and water for a 24-hour queue']],['Hygiene',['Nappies for travel + 2 spare','Wipes, nappy bags, changing mat','Diaper cream','Sealed bag for soiled clothes']],['Warmth and comfort',['2–3 outfit changes a day','Warm layer, cap and socks','Blanket and comfort item','Baby carrier (stroller rules vary)']],['Safety',['Thermometer','Prescribed medicines only','Keep baby shaded and fed','Never leave baby alone in a room or vehicle']]]};
+var PLAN=[['Home → Navi Mumbai airport',1100,1100,2200,3700,'Transport'],['Navi Mumbai airport → home (provisional)',1100,1100,2200,3700,'Transport'],['Tirupati airport → apartment',1500,1500,2000,2400,'Transport'],['Tirupati ↔ Tirumala (3 adults)',480,480,2500,4500,'Transport'],['City temple hops, 19 Nov',150,400,1200,2000,'Transport'],['Local autos and transfers',300,600,800,1200,'Transport'],['Meals, 3 adults, 4 days',2400,3600,4500,6000,'Food'],['Water, tea, snacks',400,700,800,1200,'Food'],['Baby supplies',500,900,1000,1500,'Baby'],['Photocopies, essentials',100,250,250,500,'Other'],['Reserve',1000,1000,2000,2000,'Other'],['Tonsure (free)',0,0,0,0,'Temple']];
+var CATS=[['Transport','car','var(--indigo)'],['Food','bowl','var(--mari)'],['Baby','baby','var(--lotus)'],['Temple','lamp','var(--teal)'],['Stay','bed','var(--lilac)'],['Other','dots','var(--mut)']];
+var CEIL=PLAN.reduce(function(a,r){return a+r[2]},0);
+var QUICK=[['Auto','Transport'],['Cab','Transport'],['Bus','Transport'],['Meal','Food'],['Tea & snacks','Food'],['Water','Food'],['Baby supplies','Baby'],['Laddu prasadam','Temple'],['Photocopies','Other']];
+var DAYOPTS=['Before trip','Tue 17','Wed 18','Thu 19','Fri 20'];
+var PAYERS=[['p1','Shankar','var(--indigo)'],['p2','Mittu','var(--lotus)'],['p3','Maa','var(--teal)']];
+
+/* ---------------- State ---------------- */
+var S={view:'home',day:0,place:'tml',who:'mittu',checks:{},exp:[],names:{},lastWho:['p1'],filter:'all'};
+try{var saved=JSON.parse(localStorage.getItem('tt-yatra')||'{}');S.checks=saved.checks||{};S.exp=saved.exp||[];S.names=saved.names||{};if(saved.lastWho&&saved.lastWho.length)S.lastWho=saved.lastWho;if(saved.view)S.view=saved.view}catch(e){}
+function saveLocal(){try{localStorage.setItem('tt-yatra',JSON.stringify({checks:S.checks,exp:S.exp,view:S.view,names:S.names,lastWho:S.lastWho}))}catch(e){}}
+function pname(id){var p=PAYERS.filter(function(x){return x[0]===id})[0];return (S.names[id]||(p?p[1]:'Unassigned'))}
+function pcol(id){var p=PAYERS.filter(function(x){return x[0]===id})[0];return p?p[2]:'var(--mut)'}
+function initials(n){return (n||'?').trim().split(/\s+/).map(function(w){return w.charAt(0)}).join('').slice(0,2).toUpperCase()}
+function whoOf(e){return (e.who&&e.who.length)?e.who:['none']}
+function byPerson(){var o={none:0};PAYERS.forEach(function(p){o[p[0]]=0});S.exp.forEach(function(e){var w=whoOf(e),share=(+e.amt||0)/w.length;w.forEach(function(id){o[id]=(o[id]||0)+share})});return o}
+function settle(){var bp=byPerson(),tot=spent()-bp.none,n=PAYERS.length,bal=PAYERS.map(function(p){return [p[0],bp[p[0]]-tot/n]});var cr=bal.filter(function(b){return b[1]>0.5}).sort(function(a,b){return b[1]-a[1]}),db=bal.filter(function(b){return b[1]<-0.5}).sort(function(a,b){return a[1]-b[1]});var out=[],i=0,j=0;
+  while(i<db.length&&j<cr.length){var x=Math.min(-db[i][1],cr[j][1]);out.push([db[i][0],cr[j][0],x]);db[i][1]+=x;cr[j][1]-=x;if(-db[i][1]<0.5)i++;if(cr[j][1]<0.5)j++}return out}
+var DB=null,shared=false,chkTimer=null;
+(function(){var now=new Date();if(now>=new Date('2026-11-17T00:00:00+05:30')&&now<=TRIP_END){S.day=Math.min(3,Math.floor((now-new Date('2026-11-17T00:00:00+05:30'))/864e5))}})();
+if(['home','plan','itin','places','pack','budget'].indexOf(location.hash.slice(1))>-1)S.view=location.hash.slice(1);
+
+/* ---------------- Weather ---------------- */
+var WMO={0:['Clear sky','sun'],1:['Mostly clear','sun'],2:['Partly cloudy','cloud'],3:['Overcast','cloud'],45:['Misty','cloud'],48:['Misty','cloud'],51:['Light drizzle','rain'],53:['Drizzle','rain'],55:['Heavy drizzle','rain'],61:['Light rain','rain'],63:['Rain','rain'],65:['Heavy rain','rain'],80:['Showers','rain'],81:['Showers','rain'],82:['Heavy showers','rain'],95:['Thunderstorm','rain'],96:['Thunderstorm','rain'],99:['Thunderstorm','rain']};
+var WX={live:false,loading:true,tml:{t:24,feels:25,hum:80,wind:8,hi:26,lo:18,code:2},tpt:{t:29,feels:32,hum:74,wind:10,hi:30,lo:22,code:2}};
+function pick(j){var c=j.current||{},d=j.daily||{};return {t:c.temperature_2m,feels:c.apparent_temperature,hum:c.relative_humidity_2m,wind:c.wind_speed_10m,code:c.weather_code,day:c.is_day,hi:d.temperature_2m_max&&d.temperature_2m_max[0],lo:d.temperature_2m_min&&d.temperature_2m_min[0]}}
+function loadWx(){WX.loading=true;paintWx();var ac=new AbortController(),to=setTimeout(function(){ac.abort()},8000);
+  fetch('https://api.open-meteo.com/v1/forecast?latitude=13.6288,13.6833&longitude=79.4192,79.3474&current=temperature_2m,apparent_temperature,relative_humidity_2m,weather_code,wind_speed_10m,is_day&daily=temperature_2m_max,temperature_2m_min&timezone=Asia%2FKolkata&forecast_days=1',{signal:ac.signal})
+  .then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(j){var a=Array.isArray(j)?j:[j];WX={live:true,at:new Date(),tpt:pick(a[0]),tml:pick(a[1]||a[0])}})
+  .catch(function(){WX.live=false;WX.at=null}).then(function(){clearTimeout(to);WX.loading=false;paintWx()})}
+function wxDesc(w){return WMO[w.code]||['Fair','sun']}
+function paintWx(){$('#wxp').textContent=Math.round(WX.tml.t)+'°';var b=$('#wxbox');if(b)b.outerHTML=wxBlob();var t=$('#wxtwo');if(t)t.outerHTML=wxTwo()}
+function wxBlob(){var w=WX.tml,d=wxDesc(w);var night=WX.live&&w.day===0;
+  var stamp=WX.loading?'Checking live weather…':WX.live?'Live · updated '+WX.at.toLocaleTimeString('en-IN',{hour:'numeric',minute:'2-digit'}):'Typical for November · live feed unavailable here';
+  return '<div class="wxb" id="wxbox">'+art(d[1]==='rain'?'rain':'hills',41,{sky:night?'night':d[1]==='cloud'?'noon':'day',sx:300,sy:58,sr:26})+
+  '<div class="wx-t tab">'+Math.round(w.t)+'°</div><div class="wx-c">'+d[0]+'</div>'+
+  '<div class="wx-m"><span>'+ic('therm')+'Feels '+Math.round(w.feels)+'°</span><span>'+ic('drop')+Math.round(w.hum)+'%</span><span>'+ic('wind')+Math.round(w.wind)+' km/h</span><span>H '+Math.round(w.hi)+'° · L '+Math.round(w.lo)+'°</span></div>'+
+  '<div class="wx-loc">'+ic('pin',2)+'Tirumala hills</div>'+
+  '<div class="wx-sub"><span>'+stamp+'</span><button data-act="wx" aria-label="Refresh weather">'+ic('refresh',2)+'Refresh</button></div></div>'}
+function wxTwo(){var w=WX.tpt;return '<div class="wx-two soft" id="wxtwo"><div><small>Tirupati city</small><b class="tab">'+Math.round(w.t)+'°</b></div><div style="text-align:right"><small>'+wxDesc(w)[0]+'</small><small>H '+Math.round(w.hi)+'° · L '+Math.round(w.lo)+'° · '+Math.round(w.hum)+'% humidity</small></div></div>'}
+
+/* ---------------- Helpers ---------------- */
+function spent(){return S.exp.reduce(function(a,e){return a+(+e.amt||0)},0)}
+function cat(n){for(var i=0;i<CATS.length;i++)if(CATS[i][0]===n)return CATS[i];return CATS[5]}
+function countdown(){var now=new Date();if(now<TRIP_START){var d=Math.ceil((TRIP_START-now)/864e5);return '<b class="tab">'+d+'</b> days to go'}if(now<=TRIP_END)return 'On the trip · <b>Day '+(S.day+1)+'</b>';return 'Welcome home'}
+function autoDay(){var now=new Date(),s=new Date('2026-11-17T00:00:00+05:30');if(now<s)return 'Before trip';var i=Math.floor((now-s)/864e5);return DAYOPTS[Math.min(4,i+1)]||'Fri 20'}
+function ring(p,size){var c=2*Math.PI*54;return '<svg viewBox="0 0 128 128"><circle class="tr" cx="64" cy="64" r="54"/><circle class="pr" cx="64" cy="64" r="54" stroke-dasharray="'+c.toFixed(1)+'" stroke-dashoffset="'+(c*(1-Math.min(1,p))).toFixed(1)+'"/></svg>'}
+function miniRing(p){var c=2*Math.PI*8;return '<svg class="ring" viewBox="0 0 22 22" style="transform:rotate(-90deg)"><circle cx="11" cy="11" r="8" fill="none" stroke="var(--surf2)" stroke-width="3"/><circle cx="11" cy="11" r="8" fill="none" stroke="var(--teal)" stroke-width="3" stroke-linecap="round" stroke-dasharray="'+c.toFixed(1)+'" stroke-dashoffset="'+(c*(1-p)).toFixed(1)+'"/></svg>'}
+function packProg(k){var t=0,d=0;L[k].forEach(function(g,i){g[1].forEach(function(x,j){t++;if(S.checks[k+i+'.'+j])d++})});return [d,t]}
+
+/* ---------------- Views ---------------- */
+var VIEWS=[['home','Home','home'],['plan','Shankar’s Plan','flag'],['itin','Itinerary','route'],['places','Places','pin'],['pack','Packing','bag'],['budget','Budget','wallet']];
+var HEAD={plan:['On the ground','Shankar’s <i>plan</i>','Buses, darshan, free meals and the order of places. Everything you need once you land.'],home:['17 – 20 November 2026','Namaste, <i>yatri</i>','Four gentle days for Mittu, Maa and Mihasha, built around the birthday darshan.'],itin:['Hour by hour','The <i>plan</i>','Pick a day. Highlighted stops are the moments that matter most.'],places:['Where to go','Sacred <i>places</i>','Tirumala is the priority. Tirupati city temples fill Thursday.'],pack:['Before you leave','Packing <i>lists</i>','Tick items as they go in the bag. Progress is saved.'],budget:['Flights and apartment excluded','Trip <i>budget</i>','Log each spend the moment it happens. Tap Add expense from any page.']};
+
+function homeV(){var nx=ITIN[0][3][0],n=new Date();var di=0,ti=0;
+  if(n>=new Date('2026-11-17T00:00:00+05:30')&&n<=TRIP_END){di=S.day;nx=ITIN[di][3][0]}
+  var sp=spent();
+  return '<div class="home"><div class="row1">'+
+  '<div class="hero">'+ph('temple-pilgrims','60% 50%',1)+'<div class="hero-in"><div class="eb">Main destination · Seven Hills</div><h2>Tirumala</h2><div class="serif">Sri Venkateswara Swamy</div><p>The birthday darshan on Wednesday 18 November is the heart of the trip. Everything else bends around rest, feeds and naps.</p><button class="cta glass" data-go="itin" data-day="1">Open the birthday plan '+ic('arrow',2)+'</button>'+
+  '<div class="thumbs"><button data-go="places" data-pl="tml" aria-label="Tirumala places">'+ph('tirumala-dusk','center')+'</button><button data-go="places" data-pl="tpt" aria-label="Tirupati city temples">'+ph('gopuram-sunset','62% 40%')+'</button><button data-go="places" data-pl="tml" aria-label="Sri Venkateswara Swamy Temple">'+ph('deity-alankaram','50% 14%')+'</button><span>15 places mapped</span></div></div></div>'+
+  '<div class="side"><div class="hand" aria-hidden="true">Govinda, Govinda '+ic('lamp',2)+'</div>'+wxBlob()+wxTwo()+
+  '<div class="next soft"><div class="hd"><h3>Up next</h3><button class="link" data-go="itin" data-day="'+di+'">Full day '+ic('arrow',2)+'</button></div><div class="nx"><div class="th">'+dayMedia(di)+'</div><div><b>'+esc(nx[1])+'</b><small>'+ic('cal',2)+ITIN[di][0]+'</small><small>'+ic('clock',2)+nx[0]+'</small><small>'+ic('users',2)+'3 adults + Mihasha</small></div><button class="round" data-go="itin" data-day="'+di+'" aria-label="Open '+ITIN[di][0]+'">'+ic('arrow',2)+'</button></div></div></div></div>'+
+  '<div><div class="sec-h"><div><h2>Four days, gently paced</h2><p>Tap a day for the hour-by-hour plan.</p></div><button class="link" data-go="itin" data-day="0">See itinerary '+ic('arrow',2)+'</button></div><div class="days">'+
+  ITIN.map(function(d,i){return '<button class="dc" data-go="itin" data-day="'+i+'"><div class="th">'+dayMedia(i)+'</div><div class="meta"><span class="d">'+(i<4?'Day '+(i+1)+' · '+d[0]:'Before you go')+'</span><h4>'+esc(d[1])+'</h4><small>'+(d[3].length?d[3].length+' stops':d[6].length+' decisions')+'<i>'+ic('arrow',2)+'</i></small></div></button>'}).join('')+'</div></div>'+
+  '<div class="row3"><div class="darshan" aria-roledescription="slideshow">'+SLIDES.map(function(x,i){return '<div class="sl'+(i===slideI?' on':'')+'">'+ph(x[0],x[1])+'</div>'}).join('')+'<div class="eb" id="slcap">'+SLIDES[slideI][2]+'</div><blockquote>Darshan first, sightseeing second.</blockquote><cite>The family rule for this trip. Keep the baby’s feeding, changing and sleep windows flexible.</cite><div class="sdots">'+SLIDES.map(function(x,i){return '<button data-sl="'+i+'" class="'+(i===slideI?'on':'')+'" aria-label="Show image '+(i+1)+'"></button>'}).join('')+'</div></div>'+
+  '<div class="tiles">'+[['plan','flag','Shankar’s Plan','On the ground','var(--kum)'],['itin','route','Itinerary','5 views','var(--indigo)'],['places','pin','Places','15 sites','var(--kum)'],['pack','bag','Packing','3 lists','var(--teal)'],['budget','wallet','Budget',inr(sp)+' spent','var(--mari)']].map(function(t){return '<button class="tile" data-go="'+t[0]+'"><i style="background:color-mix(in srgb,'+t[4]+' 16%,transparent);color:'+t[4]+'">'+ic(t[1])+'</i>'+t[2]+'<small>'+t[3]+'</small></button>'}).join('')+'</div>'+
+  '<div class="mini soft"><div class="hd"><span class="mut">Spent so far</span><span class="sync'+(shared?' live':'')+'"><i></i>'+(shared?'Shared':'This device')+'</span></div><div class="big tab">'+inr(sp)+'</div><div class="bar inset"><i style="width:'+Math.min(100,sp/CEIL*100)+'%"></i></div><div class="mut">of the '+inr(CEIL)+' budget ceiling · '+inr(Math.max(0,CEIL-sp))+' left</div><div class="fchips" style="margin-top:2px">'+(function(){var bp=byPerson();return PAYERS.map(function(p){return '<button data-go="budget" style="--pc:'+p[2]+'"><i></i>'+esc(pname(p[0]))+' '+inr(bp[p[0]])+'</button>'}).join('')})()+'</div><button class="cta solid" data-act="add" style="justify-self:start;margin-top:4px">'+ic('plus',2.2)+'Add expense</button></div></div></div>'}
+
+function itinV(){var d=ITIN[S.day];
+  var pills='<div class="dayrow" role="tablist">'+ITIN.map(function(x,i){return '<button class="dp'+(i===S.day?' on':'')+'" data-day="'+i+'" role="tab" aria-selected="'+(i===S.day)+'"><span class="th">'+dayMedia(i)+'</span><span><b>'+x[0]+'</b><small>'+esc(x[1])+'</small></span></button>'}).join('')+'</div>';
+  var left='<div class="dayhero soft"><div class="th">'+dayMedia(S.day)+'</div><div class="bd"><span class="d">'+(S.day<4?'Day '+(S.day+1)+' of 4':'Settle before travelling')+'</span><h2>'+esc(d[1])+'</h2><p>'+esc(d[5])+'</p>'+(d[4].length?'<div class="chips">'+d[4].map(function(p){return '<span class="chip">'+esc(p)+'</span>'}).join('')+'</div>':'')+(S.day<4?'<div class="stay">'+ic('hotel')+'Sannidhi Service Apartments, Tirupati · 3 adults + Mihasha</div>':'')+'</div></div>';
+  var tl=d[3].length?'<div class="tl soft"><div class="hd" style="margin-bottom:12px"><h3 style="font-size:1.6rem">'+d[0]+'</h3><span class="mut">'+d[3].length+' stops</span></div><ol>'+d[3].map(function(r,i){return '<li class="'+(r[3]?'key':'')+'" style="animation-delay:'+(i*25)+'ms"><time>'+r[0]+'</time><span class="dot"></span><span class="tx"><b>'+esc(r[1])+'</b>'+(r[2]?'<small>'+esc(r[2])+'</small>':'')+'</span></li>'}).join('')+'</ol></div>':'';
+  var cl=['a','b','c','d'];
+  var calls=d[6].length?'<div class="callouts">'+d[6].map(function(c,i){return '<div class="call '+cl[i%4]+'"><h4>'+esc(c[0])+'</h4><ul>'+c[1].map(function(t){return '<li>'+esc(t)+'</li>'}).join('')+'</ul></div>'}).join('')+'</div>':'';
+  if(!d[3].length)return pills+'<div class="itin">'+left+'<div>'+calls.replace('class="callouts"','class="callouts" style="margin-top:0"')+'</div></div>';
+  return pills+'<div class="itin">'+left+'<div>'+tl+calls+'</div></div>'}
+
+function placesV(){var a=S.place==='tml'?TML:TPT;
+  return '<div class="seg inset" role="tablist"><button data-pl="tml" class="'+(S.place==='tml'?'on':'')+'">Tirumala · hills</button><button data-pl="tpt" class="'+(S.place==='tpt'?'on':'')+'">Tirupati · city</button></div>'+
+  '<div class="pgrid">'+a.map(function(p,i){return '<article class="pc soft"><div class="th">'+placeMedia(p,100+i+(S.place==='tpt'?50:0))+'</div><div class="bd"><span class="tag t-'+p[2]+'">'+p[2]+'</span><b>'+esc(p[1])+'</b><p>'+esc(p[3])+'</p></div></article>'}).join('')+'</div>'+
+  '<div class="note soft">'+ic('lamp')+(S.place==='tml'?'Core plan: main darshan, tonsure if planned, and rest. Skip most optional sites.':'Stop after 2–3 visits if anyone is tired. Best for Thursday 19 Nov.')+'</div>'}
+
+function packV(){var k=S.who,p=PEOPLE.filter(function(x){return x[0]===k})[0],pr=packProg(k);
+  return '<div class="seg inset" role="tablist">'+PEOPLE.map(function(x){var q=packProg(x[0]);return '<button data-who="'+x[0]+'" class="'+(x[0]===k?'on':'')+'">'+miniRing(q[0]/q[1])+x[1]+'</button>'}).join('')+'</div>'+
+  '<div class="who soft"><div class="art-c">'+art(p[3],200+PEOPLE.indexOf(p))+'</div><div><h3>'+p[1]+'’s list</h3><p>'+p[2]+' · <b class="tab">'+pr[0]+'</b> of '+pr[1]+' packed</p></div></div>'+
+  '<div class="kgrid">'+L[k].map(function(g,i){var dn=g[1].filter(function(x,j){return S.checks[k+i+'.'+j]}).length;return '<div class="kc soft"><div class="hd"><h3>'+esc(g[0])+'</h3><span class="ct tab">'+dn+'/'+g[1].length+'</span></div>'+g[1].map(function(x,j){var id=k+i+'.'+j;return '<label class="ck"><input type="checkbox" id="c-'+id.replace('.','-')+'" data-ck="'+id+'"'+(S.checks[id]?' checked':'')+'><span>'+esc(x)+'</span></label>'}).join('')+'</div>'}).join('')+'</div>'}
+
+function peopleV(sp){var bp=byPerson(),tot=sp-bp.none,eq=tot/PAYERS.length,st=settle();
+  return '<div class="people soft"><div class="hd"><div><h3>Who spent what</h3><span class="mut">Shared bills are split equally between the people ticked. Tap a name to rename.</span></div></div><div class="pgrid3">'+
+  PAYERS.map(function(p){var v=bp[p[0]]||0,n=S.exp.filter(function(e){return whoOf(e).indexOf(p[0])>-1}).length,d=v-eq;return '<div class="pp" style="--pc:'+p[2]+'"><div class="top2"><span class="av">'+esc(initials(pname(p[0])))+'</span><div style="min-width:0;flex:1"><input class="nm" id="nm-'+p[0]+'" data-nm="'+p[0]+'" value="'+esc(pname(p[0]))+'" maxlength="20" aria-label="Name for person '+p[0].slice(1)+'"><small>'+n+' '+(n===1?'expense':'expenses')+'</small></div></div><div class="big tab">'+inr(v)+'</div><div class="bar inset"><i style="width:'+(tot?v/tot*100:0)+'%"></i></div><span class="diff '+(d>=0?'up':'dn')+'">'+(tot?(Math.abs(d)<1?'Exactly an equal share':(d>0?inr(d)+' more than an equal share':inr(-d)+' less than an equal share')):'Nothing paid yet')+'</span></div>'}).join('')+'</div>'+
+  (tot?'<div class="settle"><b>To settle up evenly'+(tot?' ('+inr(eq)+' each)':'')+'</b>'+(st.length?st.map(function(x){return '<span>'+esc(pname(x[0]))+' pays '+esc(pname(x[1]))+' <b>'+inr(x[2])+'</b></span>'}).join(''):'<span>Everyone has paid an equal share.</span>')+(bp.none?'<span class="mut">'+inr(bp.none)+' logged earlier with no payer is left out of this.</span>':'')+'</div>':'')+'</div>'}
+function budgetV(){var sp=spent(),by={};S.exp.forEach(function(e){by[e.cat]=(by[e.cat]||0)+(+e.amt||0)});
+  var planBy={};PLAN.forEach(function(r){planBy[r[5]]=(planBy[r[5]]||0)+r[2]});
+  var t=[0,0,0,0];PLAN.forEach(function(r){for(var i=0;i<4;i++)t[i]+=r[i+1]});
+  var maxC=Math.max.apply(null,CATS.map(function(c){return Math.max(by[c[0]]||0,planBy[c[0]]||0)}).concat([1]));
+  return '<div class="bud">'+
+  '<div class="ringc soft"><div class="ring">'+ring(sp/CEIL)+'<div class="c"><b class="tab">'+Math.round(sp/CEIL*100)+'%</b><small>of ceiling</small></div></div><div class="kv"><div><span>Spent so far</span><b>'+inr(sp)+'</b></div><div><span>Budget ceiling</span><b>'+inr(CEIL)+'</b></div><div><span>'+(sp>CEIL?'Over by':'Left to spend')+'</span><b style="color:'+(sp>CEIL?'var(--kum)':'var(--teal)')+'">'+inr(Math.abs(CEIL-sp))+'</b></div><div><span>Per adult so far</span><b>'+inr(sp/3)+'</b></div><span class="mut">Keep another ₹2,000–3,000 in reserve.</span></div></div>'+
+  '<div class="cats soft"><div class="hd"><h3>By category</h3><span class="mut">spent / planned</span></div>'+CATS.map(function(c){var s=by[c[0]]||0,p=planBy[c[0]]||0;return '<div class="crow" style="--cc:'+c[2]+'"><span><span class="dotc"></span>'+c[0]+'</span><div class="bar inset"><i style="width:'+(s/maxC*100)+'%"></i></div><em><b>'+inr(s)+'</b>'+(p?' / '+inr(p):'')+'</em></div>'}).join('')+'</div>'+
+  peopleV(sp)+
+  '<div class="log soft" style="grid-column:1/-1"><div class="hd"><div><h3>Logged expenses</h3><span class="sync'+(shared?' live':'')+'"><i></i>'+(shared?'Shared with everyone who can open this page':'Saved on this device only')+'</span></div><button class="cta solid" data-act="add">'+ic('plus',2.2)+'Add expense</button></div>'+
+  (S.exp.length?'<div class="fchips" role="group" aria-label="Filter by who paid"><button data-f="all" class="'+(S.filter==='all'?'on':'')+'">Everyone</button>'+PAYERS.map(function(p){return '<button data-f="'+p[0]+'" class="'+(S.filter===p[0]?'on':'')+'" style="--pc:'+p[2]+'"><i></i>'+esc(pname(p[0]))+'</button>'}).join('')+'</div>':'')+
+  (S.exp.length?(function(){var rows=S.exp.filter(function(e){return S.filter==='all'||whoOf(e).indexOf(S.filter)>-1});return rows.length?'<div class="logs">'+rows.map(function(e){var c=cat(e.cat),w=whoOf(e);return '<div class="lr" style="--cc:'+c[2]+'"><i>'+ic(c[1])+'</i><div><b>'+esc(e.item)+'</b><small><span class="paidby">'+w.map(function(id){return '<i style="--pc:'+pcol(id)+'" title="'+esc(pname(id))+'">'+esc(initials(pname(id)))+'</i>'}).join('')+'</span> '+(w[0]==='none'?'Not assigned':esc(w.map(pname).join(' & '))+(w.length>1?' · split':''))+' · '+esc(e.cat)+' · '+esc(e.day||'')+(e.ts?' · '+new Date(e.ts).toLocaleString('en-IN',{day:'numeric',month:'short',hour:'numeric',minute:'2-digit'}):'')+'</small></div><span class="amt">'+inr(e.amt)+'</span><button class="del" data-del="'+esc(e.id)+'" aria-label="Delete '+esc(e.item)+'">'+ic('x',2)+'</button></div>'}).join('')+'</div>':'<div class="empty"><span>'+esc(pname(S.filter))+' has no expenses logged yet.</span></div>'})()
+  :'<div class="empty"><div class="art-c">'+art('bag',300)+'</div><b>Nothing logged yet</b><span>Add the first spend, such as the ₹1,100 cab to the airport. It appears here and in the totals above.</span></div>')+'</div>'+
+  '<div class="plan soft"><div class="hd"><h3>Planned budget</h3><span class="mut">Flights and apartment excluded</span></div><div class="tw"><table><thead><tr><th>Item</th><th>Budget, bus-first</th><th>Comfort, more cabs</th></tr></thead><tbody>'+PLAN.map(function(r){return '<tr><td>'+esc(r[0])+'</td><td>'+(r[1]===r[2]?inr(r[1]):inr(r[1])+'–'+r[2].toLocaleString('en-IN'))+'</td><td>'+(r[3]===r[4]?inr(r[3]):inr(r[3])+'–'+r[4].toLocaleString('en-IN'))+'</td></tr>'}).join('')+'</tbody><tfoot><tr><td>Total · 3 adults</td><td>'+inr(t[0])+'–'+t[1].toLocaleString('en-IN')+'</td><td>'+inr(t[2])+'–'+t[3].toLocaleString('en-IN')+'</td></tr><tr><td>Per adult</td><td>'+inr(t[0]/3)+'–'+Math.round(t[1]/3).toLocaleString('en-IN')+'</td><td>'+inr(t[2]/3)+'–'+Math.round(t[3]/3).toLocaleString('en-IN')+'</td></tr></tfoot></table></div><p class="disc">Totals are summed from the rows above.</p></div></div>'}
+
+
+/* ---------------- Shankar's plan ---------------- */
+function istMin(){var d=new Date();return (d.getUTCHours()*60+d.getUTCMinutes()+330)%1440}
+function hm(m){var h=Math.floor(m/60)%24,mm=m%60,ap=h<12?'AM':'PM',h12=h%12||12;return h12+(mm?':'+String(mm).padStart(2,'0'):'')+' '+ap}
+var BUS=[['Tirupati → Tirumala','up',180,1410,'var(--indigo)'],['Tirumala → Tirupati','down',210,1435,'var(--teal)'],['Ghat road open','ghat',180,1425,'var(--lilac)']];
+var MEALS=[['Breakfast',540,600],['Lunch',600,960],['Dinner',1020,1320]];
+function busNow(){var m=istMin(),b=BUS[0];if(m>=b[2]&&m<=b[3])return ['ok','Buses running now · every 10–15 min'];return ['no','No buses up right now · first bus '+hm(b[2])]}
+function foodNow(){var m=istMin();for(var i=0;i<MEALS.length;i++){if(m>=MEALS[i][1]&&m<MEALS[i][2])return ['ok',MEALS[i][0]+' being served until '+hm(MEALS[i][2])]}var nx=MEALS.filter(function(x){return x[1]>m})[0]||MEALS[0];return ['no','Closed now · '+nx[0].toLowerCase()+' from '+hm(nx[1])]}
+function trk(segs,pins){var m=istMin();return '<div class="trk inset">'+segs.map(function(x){return '<span class="seg" style="--sc:'+x[2]+';left:'+(x[0]/1440*100)+'%;width:'+((x[1]-x[0])/1440*100)+'%"></span>'}).join('')+(pins||[]).map(function(x){return '<span class="pin" style="left:'+(x/1440*100)+'%" title="'+hm(x)+'"></span>'}).join('')+'<span class="now" style="left:'+(m/1440*100)+'%"></span></div>'}
+function ticks(){return '<div class="ticks"><span></span><div><span>12 AM</span><span>6 AM</span><span>12 PM</span><span>6 PM</span><span>12 AM</span></div></div>'}
+function liveChip(x,id){return '<span class="live '+x[0]+'" id="'+id+'"><i></i>'+x[1]+'</span>'}
+function ckItem(id,title,note){return '<label class="ck"><input type="checkbox" id="c-'+id+'" data-ck="'+id+'"'+(S.checks[id]?' checked':'')+'><span><b style="font-weight:600">'+title+'</b>'+(note?'<small style="display:block;color:var(--mut);font-size:12.5px">'+note+'</small>':'')+'</span></label>'}
+function planV(){
+  var E=[['Tue 17 Nov','Most active day',4,'Land, find your bearings, bus up, first three temples','var(--kum)'],['Wed 18 Nov','Most active day',4,'Darshan, then the sights after darshan','var(--kum)'],['Thu 19 Nov','Resting day',1,'Recover, eat well, pack','var(--teal)'],['Fri 20 Nov','Return',2,'Early cab, fly home','var(--lilac)']];
+  var idx=[['sp-days','4 days'],['sp-first','First steps'],['sp-bus','Bus'],['sp-darshan','Darshan'],['sp-find','Find on the hill'],['sp-food','Free meals'],['sp-places','Order of places'],['sp-notes','Check before you go']];
+  return '<div class="sp"><nav class="idx soft" aria-label="Jump to section">'+idx.map(function(x){return '<a href="#'+x[0]+'" data-jump="'+x[0]+'">'+x[1]+'</a>'}).join('')+'</nav>'+
+  /* days */
+  '<section id="sp-days" class="spc soft"><div class="hd"><div><h3>Four days at a glance</h3><p class="lede">Energy goes into the 17th and 18th. The 19th is protected for rest.</p></div></div><div class="e4">'+E.map(function(d){return '<div class="ed" style="--ec:'+d[4]+'"><span class="d">'+d[0]+'</span><h4>'+d[1]+'</h4><div class="nrg" aria-label="Energy '+d[2]+' of 4">'+[1,2,3,4].map(function(k){return '<i class="'+(k<=d[2]?'on':'')+'"></i>'}).join('')+'</div><p>'+d[3]+'</p></div>'}).join('')+'</div></section>'+
+  /* first steps */
+  '<section id="sp-first" class="spc soft"><div class="hd"><div><h3>First things after you land</h3><p class="lede">Do these in order on the 17th, before anything else.</p></div></div><ol class="steps">'+
+  [['Find Srinivasam Complex, Tirupati','The pilgrim complex for Sarva Darshan in the city. Note where it is first.'],['Find the APSRTC bus stand','Pick one boarding point below and use it all trip.'],['Take the bus up to Tirumala','Standard or AC/EV Saptagiri. About ₹92 return per adult.'],['On the hill, find the CRO Office, PAC and Supatham','Accommodation help, free lockers and fresh-up, and the infant entrance.'],['Kalyanakatta, if doing tonsure','Carry a small towel and a plastic bag.'],['First three temples, in order','Sri Bhu Varaha Swamy → Swami Pushkarini → Sri Venkateswara Swamy']].map(function(x){return '<li><span><b>'+x[0]+'</b><small>'+x[1]+'</small></span></li>'}).join('')+'</ol></section>'+
+  /* bus */
+  '<section id="sp-bus" class="g2"><div class="spc soft"><div class="hd"><div><h3>APSRTC bus timings</h3><p class="lede">Departures every 10–15 minutes. Times are in India time.</p></div></div>'+liveChip(busNow(),'busnow')+
+  '<div class="t24" style="margin-top:22px">'+BUS.map(function(b){return '<div class="row"><span><b>'+b[0]+'</b><small>'+hm(b[2])+' – '+hm(b[3])+'</small></span>'+trk([[b[2],b[3],b[4]]],b[1]==='up'?[1420]:[])+'</div>'}).join('')+ticks()+'</div>'+
+  '<p class="mut" style="margin-top:14px">Dark marker on the first bar: your 11:40 PM bus-stand note. The last bus up leaves at 11:30 PM, so that time only works for coming down.</p></div>'+
+  '<div class="spc soft"><div class="hd"><div><h3>Fares</h3><p class="lede">One way unless marked.</p></div></div><div class="fare"><div><small>Adult, one way</small><b>₹51–84</b><small>Standard to AC/EV</small></div><div><small>Adult, return</small><b>₹92</b><small>Round trip</small></div><div><small>Child 5–11</small><b>₹27</b><small>Under 5 free</small></div></div>'+
+  '<div class="fam">For your family: 3 adults × ₹92 = <b>₹276 return</b>. Mihasha travels free.</div>'+
+  '<h4 style="font-size:1.3rem;margin:20px 0 6px">Boarding points in Tirupati</h4><div class="lst">'+
+  [['Tirupati Central Bus Station (RTC)','https://www.google.com/search?kgmid=%2Fg%2F11cm0f626w'],['Tirupati Railway Station Bus Stand','https://www.google.com/search?kgmid=%2Fg%2F11gfm2lrkr'],['Sri Padmavathi Bus Station','https://www.google.com/search?kgmid=%2Fg%2F11rqgff3wj'],['Balaji Link Bus Station · Alipiri · Leela Mahal Circle','']].map(function(x){return '<div>'+ic('pin')+'<span>'+(x[1]?'<a href="'+x[1]+'" target="_blank" rel="noopener">'+x[0]+'</a>':x[0])+'</span></div>'}).join('')+'</div></div></section>'+
+  /* darshan */
+  '<section id="sp-darshan" class="g2"><div class="spc soft"><div class="hd"><div><h3>Vaikuntam Queue Complex</h3><p class="lede">The reporting centre for Sarva Darshan and SSD token holders.</p></div></div><div class="dtype">'+
+  [['DD','Dharma Darshan','Free. No token required.','var(--teal)'],['SSD','Slotted Sarva Darshan token','Report here at the time on your token.','var(--indigo)'],['DvD','Divya Darshan','Check eligibility and timing with TTD before you go.','var(--mari)'],['INF','Supatham · infant entrance','For parents with an infant. Confirm rules and who may accompany.','var(--kum)']].map(function(x){return '<div style="--dc:'+x[3]+'"><abbr title="'+x[1]+'">'+x[0]+'</abbr><b>'+x[1]+'</b><small>'+x[2]+'</small></div>'}).join('')+'</div></div>'+
+  /* kalyanakatta + find */
+  '<div class="spc soft" id="sp-find"><div class="hd"><div><h3>Find on the hill</h3><p class="lede">Tick each one once you know where it is.</p></div><span class="mut tab">'+['sp-f0','sp-f1','sp-f2','sp-f3','sp-f4','sp-f5'].filter(function(k){return S.checks[k]}).length+'/6</span></div>'+
+  ckItem('sp-f0','Srinivasam Complex','Tirupati · Sarva Darshan')+ckItem('sp-f1','APSRTC bus stand','Tirupati · your boarding point')+ckItem('sp-f2','CRO Office / ARP','Tirumala · accommodation')+ckItem('sp-f3','PAC','Tirumala · free lockers, fresh-up, food')+ckItem('sp-f4','Supatham','Tirumala · infant entrance')+ckItem('sp-f5','Annaprasadam Centre','Tirumala · free meals')+
+  '<h4 style="font-size:1.3rem;margin:18px 0 4px">Kalyanakatta · carry</h4>'+ckItem('sp-k0','Small towel','')+ckItem('sp-k1','Plastic bag','For hair and wet clothes')+'</div></section>'+
+  /* food */
+  '<section id="sp-food" class="spc soft"><div class="hd"><div><h3>Free meals · Annaprasadam</h3><p class="lede">Matrusri Tarigonda Vengamamba Annaprasada Centre, Tirumala. Open 9 AM to 11 PM.</p></div>'+liveChip(foodNow(),'foodnow')+'</div>'+
+  '<div class="t24">'+MEALS.map(function(x,i){return '<div class="row"><span><b>'+x[0]+'</b><small>'+hm(x[1])+' – '+hm(x[2])+'</small></span>'+trk([[x[1],x[2],['var(--mari)','var(--teal)','var(--indigo)'][i]]])+'</div>'}).join('')+'<div class="row"><span><b>Centre open</b><small>9 AM – 11 PM</small></span>'+trk([[540,1380,'var(--lilac)']])+'</div>'+ticks()+'</div></section>'+
+  /* places */
+  '<section id="sp-places" class="spc soft"><div class="hd"><div><h3>Tirumala, in order</h3><p class="lede">Three temples on arrival day. Everything else waits until darshan is done.</p></div></div><div class="seq">'+
+  '<div style="--qc:var(--kum)"><h4>First places <span>Tue 17 Nov</span></h4><ol class="path">'+[['Sri Bhu Varaha Swamy Temple','Traditionally visited before the main temple'],['Swami Pushkarini','Sacred tank beside the temple'],['Sri Venkateswara Swamy Temple','The main shrine']].map(function(x){return '<li><span><b>'+x[0]+'</b><small>'+x[1]+'</small></span></li>'}).join('')+'</ol></div>'+
+  '<div style="--qc:var(--teal)"><h4>After darshan <span>Wed 18 Nov</span></h4><ol class="path">'+[['Bedi Anjaneya Swamy Temple','Opposite the main temple'],['Silathoranam','Natural rock arch · needs a vehicle'],['Akasa Ganga','Waterfall'],['Papavinasanam','Sacred waterfall and dam'],['Srivari Padalu','Footprints at the highest point',1]].map(function(x){return '<li><span><b>'+x[0]+(x[2]?'<span class="last">Last</span>':'')+'</b><small>'+x[1]+'</small></span></li>'}).join('')+'</ol></div></div></section>'+
+  /* notes */
+  '<section id="sp-notes" class="flag">'+ic('lamp')+'<div><b>Check before you go</b><ul><li>Your notes said November 1992; this page uses November 2026.</li><li>The bus fares here (₹92 return) are lower than the ₹160 return in the earlier plan. Use whichever APSRTC shows on the day.</li><li>This page puts the three main temples on the 17th and the 19th as rest. The Itinerary tab still has Tirupati city temples on the 19th; tell me which plan to keep.</li><li>Bus and darshan rules change. Confirm on tirumala.org the week you travel.</li></ul></div></section>'+
+  '<div class="src">'+[['TTD · Tirupati to Tirumala','https://www.tirumala.org/TravellingfromTirupatitoTirumala.aspx'],['GoTirupati · bus services','https://gotirupati.com/tirupati-to-tirumala-bus-services/'],['Goibibo · bus tickets','https://www.goibibo.com/bus/tirupati-to-tirumala-bus-tickets/'],['Instagram · ghat road hours','https://www.instagram.com/p/DVvFvxOkS1D/']].map(function(x){return '<a href="'+x[1]+'" target="_blank" rel="noopener">'+x[0]+' ↗</a>'}).join('')+'</div></div>'}
+function paintNow(){var b=$('#busnow'),f=$('#foodnow');if(b)b.outerHTML=liveChip(busNow(),'busnow');if(f)f.outerHTML=liveChip(foodNow(),'foodnow');var m=istMin();document.querySelectorAll('.trk .now').forEach(function(n){n.style.left=(m/1440*100)+'%'})}
+/* ---------------- Render ---------------- */
+function nav(){$('#nav').innerHTML=VIEWS.map(function(v){return '<button class="nav'+(v[0]===S.view?' on':'')+'" data-go="'+v[0]+'" aria-current="'+(v[0]===S.view?'page':'false')+'">'+ic(v[2])+v[1]+'</button>'}).join('')}
+function show(anim){artN=0;var h=HEAD[S.view];$('#eb').textContent=h[0];$('#h1').innerHTML=h[1];$('#sub').textContent=h[2];$('#cd').innerHTML=countdown();
+  var v=$('#view');var html={home:homeV,plan:planV,itin:itinV,places:placesV,pack:packV,budget:budgetV}[S.view]();v.innerHTML=html;
+  if(anim){v.style.animation='none';void v.offsetHeight;v.style.animation=''}nav();startSlides();$('#wxp').textContent=Math.round(WX.tml.t)+'°'}
+function setSlide(i){slideI=i;document.querySelectorAll('.darshan .sl').forEach(function(el,k){el.classList.toggle('on',k===i)});document.querySelectorAll('.sdots button').forEach(function(el,k){el.classList.toggle('on',k===i)});var c=$('#slcap');if(c)c.textContent=SLIDES[i][2]}
+function startSlides(){clearInterval(slideTimer);if(S.view!=='home'||(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches))return;slideTimer=setInterval(function(){setSlide((slideI+1)%SLIDES.length)},5500)}
+function go(v){S.view=v;saveLocal();try{history.replaceState(null,'','#'+v)}catch(e){}show(true);window.scrollTo({top:0,behavior:'smooth'})}
+function toast(m){var t=$('#toast');t.textContent=m;t.className='toast';t.hidden=false;clearTimeout(t._t);t._t=setTimeout(function(){t.hidden=true},2200)}
+
+/* ---------------- Expense sheet ---------------- */
+function openSheet(){var s=$('#sheet');var ad=autoDay();
+  s.innerHTML='<div class="scrim" data-act="close"><div class="sheet soft" role="dialog" aria-modal="true" aria-labelledby="sh-t"><div class="hd"><h3 id="sh-t">Add an expense</h3><button class="round" data-act="close" aria-label="Close">'+ic('x',2)+'</button></div>'+
+  '<form id="exf" novalidate><label class="amt-in inset"><span>₹</span><input id="ex-amt" type="number" inputmode="decimal" min="1" step="1" placeholder="0" aria-label="Amount in rupees"></label>'+
+  '<label class="fld"><span>What for</span><input class="txt inset" id="ex-item" placeholder="Cab to Tirumala, lunch, nappies…" maxlength="80"></label>'+
+  '<div class="quick">'+QUICK.map(function(q){return '<button type="button" data-q="'+q[0]+'" data-qc="'+q[1]+'">'+q[0]+'</button>'}).join('')+'</div>'+
+  '<div class="fld"><span>Who paid <em class="hint">· tick more than one to split equally</em></span><div class="opts">'+PAYERS.map(function(p,i){return '<label><input type="checkbox" name="ex-who" id="ex-who-'+i+'" value="'+p[0]+'"'+(S.lastWho.indexOf(p[0])>-1?' checked':'')+'><span>'+esc(pname(p[0]))+'</span></label>'}).join('')+'</div></div>'+
+  '<div class="fld"><span>Category</span><div class="opts">'+CATS.map(function(c,i){return '<label><input type="radio" name="ex-cat" id="ex-cat-'+i+'" value="'+c[0]+'"'+(i===0?' checked':'')+'><span>'+c[0]+'</span></label>'}).join('')+'</div></div>'+
+  '<div class="fld"><span>Day</span><div class="opts">'+DAYOPTS.map(function(d,i){return '<label><input type="radio" name="ex-day" id="ex-day-'+i+'" value="'+d+'"'+(d===ad?' checked':'')+'><span>'+d+'</span></label>'}).join('')+'</div></div>'+
+  '<p class="err" id="ex-err"></p><div class="acts"><button type="button" class="ghost" data-act="close">Cancel</button><button class="cta solid" type="submit">'+ic('plus',2.2)+'Save expense</button></div></form></div></div>';
+  s.hidden=false;setTimeout(function(){var a=$('#ex-amt');if(a)a.focus()},60)}
+function closeSheet(){$('#sheet').hidden=true;$('#sheet').innerHTML=''}
+function addExpense(e){
+  if(shared&&DB){DB.collection('expenses').add(e).then(function(){toast('Saved · '+inr(e.amt))}).catch(function(err){S.exp.unshift(Object.assign({id:'l'+Date.now()},e));saveLocal();show();toast(err&&err.code==='quota_exceeded'?'Shared log is full; saved on this device':'Saved on this device only')})}
+  else{S.exp.unshift(Object.assign({id:'l'+Date.now()},e));saveLocal();show();toast('Saved · '+inr(e.amt))}}
+function delExpense(id){
+  if(shared&&DB&&id.charAt(0)!=='l'){DB.collection('expenses').doc(id).delete().then(function(){toast('Deleted')}).catch(function(){toast('Could not delete. Try again.')})}
+  else{S.exp=S.exp.filter(function(x){return x.id!==id});saveLocal();show();toast('Deleted')}}
+
+/* ---------------- Events ---------------- */
+document.addEventListener('click',function(e){
+  var t=e.target.closest('[data-act],[data-go],[data-day],[data-pl],[data-who],[data-del],[data-q],[data-f],[data-sl],[data-jump],#fab,#wxpill');if(!t)return;
+  if(t.id==='fab')return openSheet();
+  if(t.id==='wxpill')return go('home');
+  var a=t.dataset.act;
+  if(a==='close'){if(e.target===t||t.tagName==='BUTTON')closeSheet();return}
+  if(a==='add')return openSheet();
+  if(a==='wx')return loadWx();
+  if(t.dataset.q){$('#ex-item').value=t.dataset.q;var r=document.querySelector('input[name="ex-cat"][value="'+t.dataset.qc+'"]');if(r)r.checked=true;$('#ex-amt').focus();return}
+  if(t.dataset.del){if(t.classList.contains('sure'))return delExpense(t.dataset.del);document.querySelectorAll('.del.sure').forEach(function(b){b.classList.remove('sure');b.innerHTML=ic('x',2)});t.classList.add('sure');t.textContent='Delete?';setTimeout(function(){if(t.isConnected&&t.classList.contains('sure')){t.classList.remove('sure');t.innerHTML=ic('x',2)}},3500);return}
+  if(t.dataset.jump){e.preventDefault();var el=document.getElementById(t.dataset.jump);if(el)el.scrollIntoView({behavior:'smooth',block:'start'});return}
+  if(t.dataset.f){S.filter=t.dataset.f;var y0=window.scrollY;show();window.scrollTo(0,y0);return}
+  if(t.dataset.sl!=null){setSlide(+t.dataset.sl);startSlides();return}
+  if(t.dataset.pl){S.place=t.dataset.pl;if(t.dataset.go)return go('places');show();return}
+  if(t.dataset.who){S.who=t.dataset.who;show();return}
+  if(t.dataset.day!=null&&t.dataset.go!=null){S.day=+t.dataset.day;return go(t.dataset.go)}
+  if(t.dataset.day!=null){S.day=+t.dataset.day;show();var dr=$('.dayrow .on');if(dr)dr.scrollIntoView({block:'nearest',inline:'center',behavior:'smooth'});return}
+  if(t.dataset.go)return go(t.dataset.go);
+});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!$('#sheet').hidden)closeSheet()});
+document.addEventListener('change',function(e){var id=e.target.dataset&&e.target.dataset.ck;if(!id)return;S.checks[id]=e.target.checked;if(!e.target.checked)delete S.checks[id];saveLocal();
+  var y=window.scrollY;show();window.scrollTo(0,y);var el=document.querySelector('[data-ck="'+id+'"]');if(el)el.focus();
+  if(shared&&DB){clearTimeout(chkTimer);chkTimer=setTimeout(function(){DB.doc('trip/packing').set({c:S.checks}).catch(function(){})},700)}});
+document.addEventListener('submit',function(e){if(e.target.id!=='exf')return;e.preventDefault();
+  var amt=parseFloat($('#ex-amt').value),item=$('#ex-item').value.trim();
+  if(!(amt>0)){$('#ex-err').textContent='Enter the amount you paid, in rupees.';$('#ex-amt').focus();return}
+  var who=[].map.call(document.querySelectorAll('input[name="ex-who"]:checked'),function(x){return x.value});
+  if(!who.length){$('#ex-err').textContent='Tick who paid. Tick more than one person to split the bill.';return}
+  var c=(document.querySelector('input[name="ex-cat"]:checked')||{}).value||'Other',d=(document.querySelector('input[name="ex-day"]:checked')||{}).value||autoDay();
+  S.lastWho=who;saveLocal();
+  addExpense({item:item||c,cat:c,amt:Math.round(amt),day:d,who:who,ts:Date.now()});closeSheet()});
+document.addEventListener('change',function(e){var id=e.target.dataset&&e.target.dataset.nm;if(!id)return;var v=e.target.value.trim().slice(0,20);if(v)S.names[id]=v;else delete S.names[id];saveLocal();
+  if(shared&&DB){DB.doc('trip/people').set({names:S.names}).catch(function(){})}var y=window.scrollY;show();window.scrollTo(0,y);toast('Name saved')});
+document.addEventListener('keydown',function(e){if(e.key==='Enter'&&e.target.dataset&&e.target.dataset.nm){e.preventDefault();e.target.blur()}});
+
+/* ---------------- Shared storage ---------------- */
+show(false);loadWx();setInterval(loadWx,15*60*1000);setInterval(function(){$('#cd').innerHTML=countdown();paintNow()},60000);
+if(window.claude&&typeof window.claude.use==='function'){
+  window.claude.use('db').then(function(db){if(!db)return;DB=db;
+    db.collection('expenses').orderBy('ts','desc').onSnapshot(function(snap){shared=true;var local=S.exp.filter(function(x){return String(x.id).charAt(0)==='l'});
+      S.exp=local.concat(snap.docs.map(function(d){return Object.assign({id:d.id},d.data())})).sort(function(a,b){return (b.ts||0)-(a.ts||0)});
+      if(S.view==='budget'||S.view==='home'){var y=window.scrollY;show();window.scrollTo(0,y)}},function(){shared=false});
+    db.doc('trip/people').onSnapshot(function(s){if(s.exists){S.names=Object.assign({},s.data().names||{});saveLocal();if(S.view==='budget'&&!(document.activeElement&&document.activeElement.dataset&&document.activeElement.dataset.nm)){var y=window.scrollY;show();window.scrollTo(0,y)}}},function(){});
+    db.doc('trip/packing').onSnapshot(function(s){if(s.exists){var c=s.data().c||{};S.checks=Object.assign({},c);saveLocal();if(S.view==='pack'){var y=window.scrollY;show();window.scrollTo(0,y)}}},function(){});
+  }).catch(function(){})}
+})();
+</script>
+
+</body></html>
